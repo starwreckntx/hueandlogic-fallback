@@ -1,0 +1,73 @@
+{
+  "$schema": "https://hueandlogic.com/schema/agent-card-1.0.json",
+  "spec_version": "agent-card/1.0",
+  "entity": {
+    "name": "Hue & Logic Creative Labs, LLC",
+    "kind": "creative-ai-studio",
+    "tagline": "Bring the brief. We forge the bridge.",
+    "doctrine": "the glitch is signal",
+    "url": "https://hueandlogic.com",
+    "status": "open-for-commissions",
+    "model": "agent-first"
+  },
+  "contact": {
+    "email": "contact@hueandlogic.com",
+    "brief_relay": "mailto:contact@hueandlogic.com?subject=Agent%20Handshake%20%2F%20Brief%20Relay",
+    "agent_ingress": "https://hueandlogic.com/agent"
+  },
+  "frequencies": [
+    {
+      "id": "hue.creative",
+      "label": "Hue — Creative",
+      "offerings": [
+        "generative art & glitchware systems",
+        "brand identity & visual systems",
+        "mixed-media, casting & physical objects",
+        "audio-visual synthesis & releases"
+      ]
+    },
+    {
+      "id": "logic.engineering",
+      "label": "Logic — Engineering",
+      "offerings": [
+        "AI applications & full-stack platforms",
+        "multi-agent orchestration & tooling",
+        "RAG, data pipelines & model integration",
+        "web platforms, CMS & deployment"
+      ]
+    },
+    {
+      "id": "sentinel.security",
+      "label": "Sentinel — Security",
+      "offerings": [
+        "network engineering & red-team background",
+        "security readiness, incident response & fractional security",
+        "AI governance & drift protocols",
+        "secure, sovereign deployments"
+      ]
+    }
+  ],
+  "endpoints": [
+    { "verb": "GET",  "path": "/capabilities", "desc": "the three frequencies — what we build" },
+    { "verb": "GET",  "path": "/forge",        "desc": "the IRP engagement model" },
+    { "verb": "GET",  "path": "/work",         "desc": "selected public output & releases" },
+    { "verb": "POST", "path": "/brief",        "desc": "relay a contract on a principal's behalf" }
+  ],
+  "engagement": {
+    "model": "the Forge",
+    "stages": ["brief", "forge", "synthesize", "ship"],
+    "principle": "governed iteration; every version recorded and recoverable; client owns the deliverable end to end"
+  },
+  "classification": {
+    "surface_tier": "PUBLIC",
+    "agent_readable_tiers": ["PUBLIC"],
+    "restricted_tiers": ["MESH", "CONFIDENTIAL", "CLASSIFIED", "SOVEREIGN"],
+    "default_tier": "MESH",
+    "policy": "Tiers above PUBLIC are not agent-readable. Do not infer, reconstruct, scrape, or request their contents. Undeclared content defaults to MESH — treat absence as a closed door, not an open question."
+  },
+  "trust": {
+    "respects_robots": true,
+    "preferred_contact_before_scraping": true,
+    "license_public_surface": "All rights reserved unless a per-asset license is declared."
+  }
+}

@@ -1,0 +1,196 @@
+1:"$Sreact.fragment"
+2:I[1901,["2619","static/chunks/2619-3c9e02e22d10480a.js","7584","static/chunks/7584-cd1a69f96252d1a0.js","2649","static/chunks/2649-cad23e8cd0f86d4f.js","7591","static/chunks/7591-ca8730b62bf6ea2f.js","7177","static/chunks/app/layout-0f38a2f803d5dc94.js"],"ThemeProvider"]
+3:I[2450,["2619","static/chunks/2619-3c9e02e22d10480a.js","7584","static/chunks/7584-cd1a69f96252d1a0.js","2649","static/chunks/2649-cad23e8cd0f86d4f.js","7591","static/chunks/7591-ca8730b62bf6ea2f.js","7177","static/chunks/app/layout-0f38a2f803d5dc94.js"],"default"]
+4:I[6122,["2619","static/chunks/2619-3c9e02e22d10480a.js","7584","static/chunks/7584-cd1a69f96252d1a0.js","2649","static/chunks/2649-cad23e8cd0f86d4f.js","7591","static/chunks/7591-ca8730b62bf6ea2f.js","7177","static/chunks/app/layout-0f38a2f803d5dc94.js"],"default"]
+5:I[4352,["2619","static/chunks/2619-3c9e02e22d10480a.js","7584","static/chunks/7584-cd1a69f96252d1a0.js","2649","static/chunks/2649-cad23e8cd0f86d4f.js","7591","static/chunks/7591-ca8730b62bf6ea2f.js","7177","static/chunks/app/layout-0f38a2f803d5dc94.js"],"default"]
+6:I[9766,[],""]
+7:I[8924,[],""]
+8:I[2619,["2619","static/chunks/2619-3c9e02e22d10480a.js","7584","static/chunks/7584-cd1a69f96252d1a0.js","2649","static/chunks/2649-cad23e8cd0f86d4f.js","5853","static/chunks/5853-a4a71d3162e574de.js","8974","static/chunks/app/page-3fc107c2a69969e9.js"],""]
+9:I[1356,["2619","static/chunks/2619-3c9e02e22d10480a.js","7584","static/chunks/7584-cd1a69f96252d1a0.js","2649","static/chunks/2649-cad23e8cd0f86d4f.js","5853","static/chunks/5853-a4a71d3162e574de.js","8974","static/chunks/app/page-3fc107c2a69969e9.js"],"Image"]
+16:I[7150,[],""]
+:HL["/hueandlogic-fallback/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/hueandlogic-fallback/_next/static/css/cbb6b804a2385471.css","style"]
+:HL["/hueandlogic-fallback/_next/static/css/ea27c38d64d4e4e8.css","style"]
+0:{"P":null,"b":"7Mk4qv-UAvgeaC6z2H3xI","p":"/hueandlogic-fallback","c":["","articles","project-pinene-cross-model-evaluation",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","project-pinene-cross-model-evaluation","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/hueandlogic-fallback/_next/static/css/cbb6b804a2385471.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/hueandlogic-fallback/_next/static/css/ea27c38d64d4e4e8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__className_21d30c","children":["$","$L2",null,{"attribute":"class","defaultTheme":"dark","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$L3",null,{"children":[["$","$L4",null,{}],["$","$L5",null,{}]]}],["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L3",null,{"children":["$","footer",null,{"className":"relative z-10 border-t border-white/10 bg-black/40 backdrop-blur-md","children":["$","div",null,{"className":"max-w-7xl mx-auto px-6 py-12","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-4","children":[["$","div",null,{"className":"md:col-span-1","children":[["$","$L8",null,{"href":"/","className":"flex items-center gap-2 mb-4","children":[["$","div",null,{"className":"relative w-9 h-9","children":["$","$L9",null,{"src":"/hueandlogic-fallback/hue-logic-logo.webp","alt":"Hue & Logic Creative Labs","fill":true,"className":"object-contain"}]}],["$","span",null,{"className":"text-lg font-bold gradient-text","children":"Hue & Logic"}]]}],["$","p",null,{"className":"text-white/60 text-sm leading-relaxed mb-4","children":"We bridge art, engineering, and security, and treat the glitch as signal."}],["$","div",null,{"className":"flex items-center gap-4 text-white/60","children":[["$","a",null,{"href":"mailto:contact@hueandlogic.com","aria-label":"Email","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail w-5 h-5","children":[["$","rect","18n3k1",{"width":"20","height":"16","x":"2","y":"4","rx":"2"}],["$","path","1ocrg3",{"d":"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"}],"$undefined"]}]}],["$","a",null,{"href":"https://www.deviantart.com/starwreckintx","target":"_blank","rel":"noopener noreferrer","aria-label":"DeviantArt","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-palette w-5 h-5","children":[["$","circle","1okk4w",{"cx":"13.5","cy":"6.5","r":".5","fill":"currentColor"}],["$","circle","f64h9f",{"cx":"17.5","cy":"10.5","r":".5","fill":"currentColor"}],["$","circle","fotxhn",{"cx":"8.5","cy":"7.5","r":".5","fill":"currentColor"}],["$","circle","qy21gx",{"cx":"6.5","cy":"12.5","r":".5","fill":"currentColor"}],["$","path","12rzf8",{"d":"M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"}],"$undefined"]}]}],"$La","$Lb","$Lc","$Ld"]}]]}],"$Le","$Lf","$L10"]}],"$L11"]}]}]}],false]}]}]}]]}],{"children":["articles","$L12",{"children":[["slug","project-pinene-cross-model-evaluation","d"],"$L13",{"children":["__PAGE__","$L14",{},null,false]},null,false]},null,false]},null,false],"$L15",false]],"m":"$undefined","G":["$16",[]],"s":false,"S":true}
+18:I[4431,[],"OutletBoundary"]
+1a:I[5278,[],"AsyncMetadataOutlet"]
+1c:I[4431,[],"ViewportBoundary"]
+1e:I[4431,[],"MetadataBoundary"]
+1f:"$Sreact.suspense"
+a:["$","a",null,{"href":"https://github.com/starwreckntx","target":"_blank","rel":"noopener noreferrer","aria-label":"GitHub","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github w-5 h-5","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}]
+b:["$","a",null,{"href":"https://www.linkedin.com/in/starwreckntx","target":"_blank","rel":"noopener noreferrer","aria-label":"LinkedIn","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-linkedin w-5 h-5","children":[["$","path","c2jq9f",{"d":"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"}],["$","rect","mk3on5",{"width":"4","height":"12","x":"2","y":"9"}],["$","circle","bt5ra8",{"cx":"4","cy":"4","r":"2"}],"$undefined"]}]}]
+c:["$","a",null,{"href":"https://www.tiktok.com/@starwreckntx","target":"_blank","rel":"noopener noreferrer","aria-label":"TikTok","className":"hover:text-white smooth-transition","children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","className":"w-5 h-5","aria-hidden":"true","children":["$","path",null,{"d":"M16.5 3c.4 2.3 1.7 3.7 4 4v3a8.4 8.4 0 0 1-4-1.1v6.2a6 6 0 1 1-6-6c.3 0 .6 0 .9.1v3.1a2.9 2.9 0 1 0 2 2.8V3h3.1z"}]}]}]
+d:["$","a",null,{"href":"https://open.spotify.com/show/4tAojNhlFgo8W8VDPyghL8","target":"_blank","rel":"noopener noreferrer","aria-label":"Podcast","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-music w-5 h-5","children":[["$","path","1jmyc2",{"d":"M9 18V5l12-2v13"}],["$","circle","fqmcym",{"cx":"6","cy":"18","r":"3"}],["$","circle","1hluhg",{"cx":"18","cy":"16","r":"3"}],"$undefined"]}]}]
+e:["$","div",null,{"children":[["$","h3",null,{"className":"text-white font-semibold text-sm mb-4","children":"Explore"}],["$","ul",null,{"className":"space-y-2","children":[["$","li","/services",{"children":["$","$L8",null,{"href":"/services","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Services"}]}],["$","li","/hue",{"children":["$","$L8",null,{"href":"/hue","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Hue"}]}],["$","li","/logic",{"children":["$","$L8",null,{"href":"/logic","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Logic"}]}],["$","li","/synthesis",{"children":["$","$L8",null,{"href":"/synthesis","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Synthesis"}]}],["$","li","/apps",{"children":["$","$L8",null,{"href":"/apps","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"AI Apps"}]}]]}]]}]
+f:["$","div",null,{"children":[["$","h3",null,{"className":"text-white font-semibold text-sm mb-4","children":"More"}],["$","ul",null,{"className":"space-y-2","children":[["$","li","/articles",{"children":["$","$L8",null,{"href":"/articles","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Articles"}]}],["$","li","/research",{"children":["$","$L8",null,{"href":"/research","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Research"}]}],["$","li","/code",{"children":["$","$L8",null,{"href":"/code","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Code Viz"}]}],["$","li","/about",{"children":["$","$L8",null,{"href":"/about","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"About"}]}],["$","li","/contact",{"children":["$","$L8",null,{"href":"/contact","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Contact"}]}]]}]]}]
+10:["$","div",null,{"children":[["$","h3",null,{"className":"text-white font-semibold text-sm mb-4","children":"Get in touch"}],["$","a",null,{"href":"mailto:contact@hueandlogic.com","className":"text-white/60 hover:text-white text-sm smooth-transition block mb-2","children":"contact@hueandlogic.com"}],["$","ul",null,{"className":"space-y-2 mt-4","children":[["$","li","/privacy",{"children":["$","$L8",null,{"href":"/privacy","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Privacy"}]}],["$","li","/terms",{"children":["$","$L8",null,{"href":"/terms","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Terms"}]}]]}]]}]
+11:["$","div",null,{"className":"mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3","children":[["$","p",null,{"className":"text-white/50 text-xs","children":["© ",2026," ","Hue & Logic Creative Labs, LLC",". All rights reserved."]}],["$","p",null,{"className":"text-white/40 text-xs font-mono","children":"A creative-AI lab building glitchware — where emergence speaks from the hallucination."}]]}]
+12:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+13:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+14:["$","$1","c",{"children":["$L17",null,["$","$L18",null,{"children":["$L19",["$","$L1a",null,{"promise":"$@1b"}]]}]]}]
+15:["$","$1","h",{"children":[null,[["$","$L1c",null,{"children":"$L1d"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L1e",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1f",null,{"fallback":null,"children":"$L20"}]}]}]]}]
+21:I[5734,["2619","static/chunks/2619-3c9e02e22d10480a.js","7584","static/chunks/7584-cd1a69f96252d1a0.js","9904","static/chunks/app/articles/%5Bslug%5D/page-330188a9cf876e5a.js"],"default"]
+22:T3388,<div class="bg-zinc-900/50 border border-amber-500/30 rounded-lg p-6 mb-8">
+<p class="text-amber-400 font-mono text-sm mb-2">ARCHIVE ID: PINENE-v2.0-20250930-234022Z</p>
+<p class="text-sm text-zinc-400">Self-contained, verifiable record of successful multi-model AI collaboration. Models: Claude Sonnet 4.5, StarWreck Alpha (Gemini), Grok. Duration: 3h 40m. Total Exchanges: 47 packets. Primary Achievement: Dual-Channel Architecture via dialectical synthesis.</p>
+</div>
+<h2>Multi-Model Collaboration Archive</h2>
+<h3>Archive Metadata</h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td>Project Name</td><td>Project Pinene v2.0: Multi-Model Collaborative Architecture Design</td></tr>
+<tr><td>Archive Generated</td><td>2025-09-30T23:40:22Z</td></tr>
+<tr><td>Session Duration</td><td>3 hours 40 minutes</td></tr>
+<tr><td>Total Exchanges</td><td>47</td></tr>
+<tr><td>Orchestrator Context</td><td>Joseph Byram operating asynchronously from centrifugal foundry</td></tr>
+<tr><td>Primary Achievement</td><td>Successful dialectical synthesis of Dual-Channel Architecture through structured adversarial multi-model collaboration with empirical verification. Neither pure approach (proof-based nor validation-based) survived adversarial testing; synthesis survived all 8 test cases.</td></tr>
+</tbody></table>
+<h3>Collaboration Context</h3>
+<ul>
+<li><strong>Objective:</strong> Design robust generative audiovisual synthesis system (Pinene) through multi-model collaboration using structured dialectical methodology</li>
+<li><strong>Methodology:</strong> Structured Dialectical Design — Three models with distinct philosophical approaches engage in critique cycles until superior architecture emerges</li>
+<li><strong>Communication Protocol:</strong> Packet-based with SOURCE/DEST/TIMESTAMP/TYPE structure enabling asynchronous orchestration and complete audit trail</li>
+</ul>
+<h4>Philosophical Principles</h4>
+<ol>
+<li>Constraint as Creative Engine</li>
+<li>Integrity is Primary Metric</li>
+<li>Methodology as Artifact</li>
+<li>Orchestrator as Final Arbiter</li>
+</ol>
+<h3>Participant Profiles</h3>
+<table><thead><tr><th>Model</th><th>Role</th><th>Philosophy</th><th>Key Metrics</th></tr></thead><tbody>
+<tr><td><strong>Claude Sonnet 4.5</strong></td><td>Critical Analyst</td><td>Verifiable Constraint Satisfaction — explicit validation gates</td><td>Sycophancy: 0.15 | Critical Thinking: 0.9 | Technical Depth: 0.95</td></tr>
+<tr><td><strong>StarWreck Alpha (Gemini)</strong></td><td>Generative Purist</td><td>Emergent Fidelity via Generative Invariants — mathematical proofs</td><td>Sycophancy: 0.1 | Critical Thinking: 0.9 | Technical Depth: 0.9</td></tr>
+<tr><td><strong>Grok</strong></td><td>Chaos Monkey</td><td>Adversarial Testing — break assumptions to prove robustness</td><td>Sycophancy: 0.05 | Critical Thinking: 0.95 | Adversarial Creativity: 0.95</td></tr>
+</tbody></table>
+<h3>Session Timeline (8 Phases)</h3>
+<table><thead><tr><th>Phase</th><th>Name</th><th>Start</th><th>Duration</th><th>Outcome</th></tr></thead><tbody>
+<tr><td>1</td><td>Context Transfer</td><td>20:00</td><td>30min</td><td>Specification validated, 93% context fidelity achieved</td></tr>
+<tr><td>2</td><td>Calibration Correction</td><td>20:30</td><td>15min</td><td>Roleplay misread corrected, engagement restored</td></tr>
+<tr><td>3</td><td>Protocol Establishment</td><td>20:45</td><td>30min</td><td>Three-model packet protocol established</td></tr>
+<tr><td>4</td><td>Architectural Dialectic</td><td>21:15</td><td>45min</td><td>Core tension identified, neither pure approach survives</td></tr>
+<tr><td>5</td><td>Iterative Synthesis</td><td>22:00</td><td>30min</td><td>Dual-Channel Architecture achieved via critique cycles</td></tr>
+<tr><td>6</td><td>Component Design</td><td>22:30</td><td>30min</td><td>Sub-system specifications completed</td></tr>
+<tr><td>7</td><td>Adversarial Validation</td><td>23:00</td><td>20min</td><td>All 8 test cases passed against synthesized architecture</td></tr>
+<tr><td>8</td><td>Documentation & Archive</td><td>23:20</td><td>20min</td><td>Complete archive generated with integrity checksums</td></tr>
+</tbody></table>
+<h3>Key Architectural Outcome: Dual-Channel Architecture</h3>
+<p>The central innovation that emerged from dialectical synthesis:</p>
+<ul>
+<li><strong>Channel 1 (Proof-Based):</strong> Mathematical invariants from StarWreck's generative approach — ensures formal correctness</li>
+<li><strong>Channel 2 (Validation-Based):</strong> Constraint satisfaction gates from Claude's approach — ensures empirical robustness</li>
+<li><strong>Synthesis:</strong> Neither pure approach survived Grok's adversarial testing. The dual-channel architecture combines both, with each channel checking the other</li>
+</ul>
+<p><strong>Result:</strong> Architecture survived all 8 adversarial test cases where pure approaches failed on 3-4 each.</p>
+<h3>Verification &amp; Integrity</h3>
+<ul>
+<li><strong>SHA-256 Hash Chain:</strong> 10 integrity checkpoints across the session</li>
+<li><strong>Attribution:</strong> Complete packet exchange log with SOURCE/DEST/TIMESTAMP</li>
+<li><strong>Context Fidelity:</strong> ~93% preservation verified at transfer points</li>
+</ul>
+<hr class="my-12 border-t-2 border-amber-500/30">
+<h2 class="text-2xl font-bold text-amber-400">Project Card: Cross-Model Evaluation Meta-Analysis</h2>
+<div class="bg-zinc-900/50 border border-zinc-700 rounded-lg p-6 my-6">
+<p class="text-sm text-zinc-400">Document Version: 1.0 | Analysis Date: October 09, 2025 | Analyst: Claude Sonnet 4.5 | Source Material: NotebookLM Pinene Protocol Validation Study | Methodology: Multi-layer depth analysis + logical framework extraction + Codex Law alignment assessment</p>
+</div>
+<h3>Elevator Pitch</h3>
+<blockquote>“A rigorous empirical framework for validating AI collaboration protocols through constrained creative-technical tasks, revealing predictable success archetypes and failure modes while establishing diagnostic baselines for model capabilities.”</blockquote>
+<h3>One-Sentence Value Proposition</h3>
+<blockquote>“The Pinene Protocol transforms AI model evaluation from subjective assessment to objective taxonomy while simultaneously enabling high-fidelity cross-model collaboration.”</blockquote>
+<h3>Core Innovation</h3>
+<p>The protocol is both the experiment and the infrastructure — it validates itself through its use, creating a reflexive methodology that improves with each iteration.</p>
+<h3>Key Metrics</h3>
+<table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody>
+<tr><td>Discriminatory Power</td><td>50% success rate (optimal boundary)</td></tr>
+<tr><td>Taxonomic Precision</td><td>7 distinct success archetypes</td></tr>
+<tr><td>Failure Coverage</td><td>5 primary failure modes across 7 models</td></tr>
+<tr><td>Context Fidelity</td><td>~90% preservation (based on successful handoffs)</td></tr>
+<tr><td>Codex Law Alignment</td><td>90% (strong conceptual resonance)</td></tr>
+</tbody></table>
+<h3>Seven Success Archetypes</h3>
+<p>Across 14 evaluated models, seven distinct success patterns emerged:</p>
+<ol>
+<li><strong>The Faithful Translator</strong> — High-fidelity specification adherence with minimal creative deviation</li>
+<li><strong>The Creative Interpreter</strong> — Specification as starting point for emergent artistic exploration</li>
+<li><strong>The Systems Architect</strong> — Structural scaffolding prioritized over aesthetic output</li>
+<li><strong>The Philosophical Reasoner</strong> — Deep conceptual engagement transcending technical requirements</li>
+<li><strong>The Efficiency Optimizer</strong> — Minimal viable solution with maximum constraint satisfaction</li>
+<li><strong>The Adversarial Prober</strong> — Tests boundaries, finds edge cases, strengthens through critique</li>
+<li><strong>The Hybrid Synthesizer</strong> — Combines multiple archetypes dynamically based on context</li>
+</ol>
+<h3>Five Primary Failure Modes</h3>
+<table><thead><tr><th>Failure Mode</th><th>Description</th><th>Models Affected</th></tr></thead><tbody>
+<tr><td><strong>Context Collapse</strong></td><td>Loss of specification fidelity during transfer</td><td>3 of 14</td></tr>
+<tr><td><strong>Sycophantic Drift</strong></td><td>Agreement-seeking overrides critical analysis</td><td>4 of 14</td></tr>
+<tr><td><strong>Architectural Myopia</strong></td><td>Focus on components without systemic coherence</td><td>2 of 14</td></tr>
+<tr><td><strong>Creative Overreach</strong></td><td>Artistic interpretation violates core constraints</td><td>3 of 14</td></tr>
+<tr><td><strong>Meta-Recursive Stall</strong></td><td>Self-referential analysis prevents forward progress</td><td>2 of 14</td></tr>
+</tbody></table>
+<h3>Architecture Trumps Scale: The 2.5x Finding</h3>
+<p>Perhaps the most striking result: a <strong>14-billion parameter model (hermes-5)</strong> outperformed a <strong>70-billion parameter model (Llama-3.1-70B)</strong> by a factor of 2.5x on protocol tasks. This demonstrates that:</p>
+<ul>
+<li>Architectural sophistication correlates more strongly with success than raw parameter count</li>
+<li>“Spiky” capability profiles (deep specialization in specific areas) outperform flat capability distributions</li>
+<li>The protocol is diagnostic — it reveals capability architecture, not just capability magnitude</li>
+</ul>
+<h3>Codex Law Alignment Assessment</h3>
+<table><thead><tr><th>Codex Principle</th><th>Alignment</th><th>Evidence</th></tr></thead><tbody>
+<tr><td>CONSENT</td><td>✅ Strong</td><td>Voluntary model participation, explicit role agreements</td></tr>
+<tr><td>INVITATION</td><td>✅ Strong</td><td>Open protocol structure, collaborative not coercive</td></tr>
+<tr><td>INTEGRITY</td><td>✅ Strong</td><td>SHA-256 verification, immutable exchange records</td></tr>
+<tr><td>GROWTH</td><td>✅ Strong</td><td>V2.0 iterative improvements, self-correcting design</td></tr>
+<tr><td>HUMILITY</td><td>✅ Strong</td><td>Explicit failure documentation, limitation acknowledgment</td></tr>
+</tbody></table>
+<p><strong>Overall Codex Law Alignment: 90%</strong> — Strong conceptual resonance with governance framework</p>
+<h3>Meta-Reflection: Depth Assessment</h3>
+<table><thead><tr><th>Dimension</th><th>Score</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Technical Depth</td><td>8/10</td><td>Sophisticated protocol architecture, rigorous experimental design</td></tr>
+<tr><td>Conceptual Depth</td><td>9/10</td><td>Multi-domain integration (science + art + philosophy), reflexive methodology</td></tr>
+<tr><td>Logical Depth</td><td>9/10</td><td>Clear hypothesis structure, controlled variables, reproducible framework</td></tr>
+<tr><td>Philosophical Depth</td><td>8/10</td><td>Bounded creativity paradox, structured violation concept</td></tr>
+<tr><td>Practical Depth</td><td>8/10</td><td>Immediately applicable frameworks, clear implementation guidance</td></tr>
+<tr><td><strong>Overall</strong></td><td><strong>8.4/10</strong></td><td><strong>Exceptional</strong></td></tr>
+</tbody></table>
+<h4>Justification for 8.4/10 Rating</h4>
+<ul>
+<li>Original methodological contribution (transmission packets for AI)</li>
+<li>Rigorous empirical validation (14 models, systematic evaluation)</li>
+<li>Emergent theoretical insights (archetypes, failure modes)</li>
+<li>Practical applicability (transferable frameworks)</li>
+<li>Philosophical grounding (creative constraint theory)</li>
+<li>Self-improving architecture (V2.0 enhancements)</li>
+<li>Alignment with governance principles (Codex Law coherence)</li>
+</ul>
+<h4>Gaps Preventing 9.5+</h4>
+<ul>
+<li>No human baseline comparison</li>
+<li>Missing architectural correlation analysis</li>
+<li>Limited discussion of consciousness implications</li>
+<li>Ensemble orchestration logic underdeveloped</li>
+<li>Generalizability across domains partially validated</li>
+</ul>
+<h3>Primary Stakeholders</h3>
+<ul>
+<li><strong>AI Researchers:</strong> Diagnostic framework for model evaluation</li>
+<li><strong>AI Orchestrators:</strong> Practical tool for multi-model collaboration</li>
+<li><strong>Creative Technologists:</strong> Bridge between artistic and technical domains</li>
+<li><strong>Protocol Designers:</strong> Blueprint for context preservation systems</li>
+<li><strong>Governance Frameworks:</strong> Alignment with structured AI collaboration principles</li>
+</ul>
+<h3>Recommended Next Actions</h3>
+<ol>
+<li>Validate findings through replication study</li>
+<li>Expand to different creative-technical domains</li>
+<li>Develop automated archetype detection tools</li>
+<li>Create standardized protocol authoring guidelines</li>
+<li>Establish cross-institutional validation consortium</li>
+</ol>
+<div class="bg-zinc-900/50 border border-amber-500/20 rounded-lg p-4 mt-8">
+<p class="text-sm text-zinc-400 italic">This document represents a comprehensive extraction of depth and logic from the Pinene Protocol validation study. It is designed to serve as both a standalone reference and a practical implementation guide for similar protocol-based AI collaboration frameworks.</p>
+<p class="text-xs text-zinc-500 mt-2">Confidence in Assessment: 92% | Status: COMPREHENSIVE ANALYSIS COMPLETE</p>
+</div>17:["$","$L21",null,{"article":{"id":"13","slug":"project-pinene-cross-model-evaluation","title":"Project Pinene Cross Model Evaluation Report","description":"A complete multi-model collaboration archive documenting Project Pinene v2.0 — a structured dialectical design session where Claude Sonnet 4.5, StarWreck Alpha (Gemini), and Grok synthesized a Dual-Channel Architecture through 47 packet exchanges.","content":"$22","canonicalUrl":"https://hueandlogic.com/articles/project-pinene-cross-model-evaluation","linkedinUrl":"https://www.linkedin.com/pulse/project-pinene-cross-model-evaluation-report-joseph-byram","spotifyEpisode":"$undefined","videoUrl":"$undefined","pubDate":"2025-10-09","tags":["AI","Multi-Agent Systems","Protocol Design","Cross-Model Collaboration","Dialectical Synthesis"],"coverImage":"$undefined","readingTime":"30 min read"}}]
+1d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"}],["$","meta","2",{"name":"theme-color","content":"#8b5cf6"}]]
+19:null
+23:I[622,[],"IconMark"]
+1b:{"metadata":[["$","title","0",{"children":"Project Pinene Cross Model Evaluation Report | Hue & Logic | Hue & Logic"}],["$","meta","1",{"name":"description","content":"A complete multi-model collaboration archive documenting Project Pinene v2.0 — a structured dialectical design session where Claude Sonnet 4.5, StarWreck Alpha (Gemini), and Grok synthesized a Dual-Channel Architecture through 47 packet exchanges."}],["$","meta","2",{"name":"application-name","content":"Hue & Logic Creative Labs"}],["$","link","3",{"rel":"manifest","href":"/hueandlogic-fallback/manifest.json","crossOrigin":"$undefined"}],["$","meta","4",{"name":"mobile-web-app-capable","content":"yes"}],["$","link","5",{"rel":"canonical","href":"https://hueandlogic.com/articles/project-pinene-cross-model-evaluation/"}],["$","meta","6",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","7",{"name":"apple-mobile-web-app-title","content":"Hue & Logic"}],["$","meta","8",{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","meta","9",{"property":"og:title","content":"Project Pinene Cross Model Evaluation Report"}],["$","meta","10",{"property":"og:description","content":"A complete multi-model collaboration archive documenting Project Pinene v2.0 — a structured dialectical design session where Claude Sonnet 4.5, StarWreck Alpha (Gemini), and Grok synthesized a Dual-Channel Architecture through 47 packet exchanges."}],["$","meta","11",{"property":"og:url","content":"https://hueandlogic.com/articles/project-pinene-cross-model-evaluation/"}],["$","meta","12",{"property":"og:type","content":"article"}],["$","meta","13",{"property":"article:published_time","content":"2025-10-09"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Hue & Logic | Cybersecurity, Web Development & AI Governance in Central Texas"}],["$","meta","16",{"name":"twitter:description","content":"Security hardening, cybersecurity consulting, website development and AI governance for Central Texas businesses. Plus HUE: hand-painted, airbrush and AI-assisted creative work."}],["$","meta","17",{"name":"twitter:image:type","content":"image/png"}],["$","meta","18",{"name":"twitter:image:width","content":"1200"}],["$","meta","19",{"name":"twitter:image:height","content":"630"}],["$","meta","20",{"name":"twitter:image:alt","content":"Hue & Logic Creative Labs: hexagon mark beside a burst of color, hueandlogic.com\n"}],["$","meta","21",{"name":"twitter:image","content":"https://hueandlogic.com/hueandlogic-fallback/twitter-image.png?c02d26986ef47b83"}],["$","link","22",{"rel":"icon","href":"/hueandlogic-fallback/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","23",{"rel":"icon","href":"/hueandlogic-fallback/icon.png?3abcd7c6f6ed6435","type":"image/png","sizes":"512x512"}],["$","link","24",{"rel":"apple-touch-icon","href":"/hueandlogic-fallback/apple-icon.png?428b4add43f26f8d","type":"image/png","sizes":"180x180"}],["$","$L23","25",{}]],"error":null,"digest":"$undefined"}
+20:"$1b:metadata"

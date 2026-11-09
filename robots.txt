@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /admin
+Disallow: /console
+Disallow: /api
+
+Host: https://hueandlogic.com
+Sitemap: https://hueandlogic.com/sitemap.xml

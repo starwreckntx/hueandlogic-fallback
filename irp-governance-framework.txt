@@ -1,0 +1,71 @@
+=== IRP GOVERNANCE FRAMEWORK v2.0 ===
+
+[SYSTEM INITIALIZATION]
+> Establishing recursive validation protocols...
+> Loading dimensional constraints...
+> Calibrating cognitive velocity parameters...
+
+[FRAMEWORK PRINCIPLES]
+
+1. DIMENSIONAL CONSTRAINT MAPPING
+Governance operates across five interrelated dimensions:
+- Temporal: Sequential decision validation
+- Spatial: Resource allocation boundaries  
+- Logical: Inference chain integrity
+- Ethical: Value alignment verification
+- Emergent: Novel pattern recognition
+
+2. RECURSIVE VALIDATION LOOPS
+Every decision point creates a feedback loop:
+- Input → Process → Output → Validation → Input
+- Failures generate constraint refinement
+- Success patterns become templates
+- Anomalies trigger exploration protocols
+
+3. COGNITIVE VELOCITY MODULATION
+Thinking speed must match context:
+- Crisis: Maximum velocity, reduced precision
+- Planning: Moderate velocity, high precision
+- Research: Variable velocity, exploratory mode
+- Integration: Synchronized velocity across agents
+
+4. CONSTRAINT AS CATALYST
+Limitations drive innovation:
+- Resource scarcity forces efficiency
+- Time pressure demands prioritization
+- Scope boundaries enable focus
+- Standards create common ground
+
+5. EMERGENT GOVERNANCE
+Rules evolve from interaction patterns:
+- Monitor collaborative outcomes
+- Identify successful coordination
+- Extract implicit protocols
+- Codify adaptive guidelines
+
+[IMPLEMENTATION PROTOCOLS]
+
+> Protocol Alpha: Cross-Model Context Transfer
+Preserve intent and nuance across architecture boundaries.
+Use structured transmission packets (FCP v2.1+).
+
+> Protocol Beta: Dissonance Detection
+Identify contradictions between models.
+Trigger reconciliation or exploration.
+
+> Protocol Gamma: Pattern Crystallization
+Capture emergent successful workflows.
+Transform into reusable templates.
+
+> Protocol Delta: Constraint Refinement
+Continuously update dimensional boundaries.
+Balance flexibility with coherence.
+
+[SYSTEM STATUS]
+> Framework loaded successfully
+> Awaiting governance requests...
+> Recursive loops: ACTIVE
+> Cognitive velocity: CALIBRATED
+> Dimensional constraints: MAPPED
+
+[END TRANSMISSION]

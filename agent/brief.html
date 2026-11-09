@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #05060A; }
+  @keyframes flicker { 0%,100% { opacity: 1; } 50% { opacity: 0.99; } }
+  @keyframes pulse-dot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.35; transform: scale(0.7); } }
+  @keyframes sweep { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  ::selection { background: rgba(168,85,247,0.4); }
+  textarea, input { font-family: 'JetBrains Mono', monospace; }
+  textarea::placeholder, input::placeholder { color: #4a5160; }
+  textarea:focus, input:focus { outline: none; border-color: #a855f7 !important; }
+</style>
+</helmet>
+<div style="background: #05060A; color: #C7D0DA; font-family: 'Inter', sans-serif; position: relative; overflow-x: hidden; min-height: 100vh; animation: flicker 0.2s infinite;">
+
+  <!-- scanline overlay -->
+  <div style="pointer-events: none; position: fixed; inset: 0; z-index: 50; background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.18) 50%); background-size: 100% 2px; box-shadow: inset 0 0 120px rgba(0,0,0,0.8);"></div>
+  <div style="position: absolute; top: -160px; left: 50%; transform: translateX(-50%); width: 820px; height: 520px; background: radial-gradient(ellipse, rgba(124,58,237,0.18), transparent 62%); filter: blur(34px); pointer-events: none; z-index: 0;"></div>
+
+  <div style="position: relative; z-index: 10; max-width: 1080px; margin: 0 auto; padding: 36px 28px 90px;">
+
+    <!-- status bar -->
+    <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 14px; margin-bottom: 34px; flex-wrap: wrap; gap: 10px; font-family: 'JetBrains Mono', monospace;">
+      <span style="font-size: 12px; letter-spacing: 0.14em; color: #a78bfa;">/// POST /brief · INTAKE ///</span>
+      <div style="display: flex; align-items: center; gap: 9px;">
+        <span style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 9px rgba(34,197,94,0.8); animation: pulse-dot 1.8s ease-in-out infinite;"></span>
+        <span style="font-size: 11px; letter-spacing: 0.12em; color: #7ee2a8;">ACCEPTING · PUBLIC TIER 0</span>
+      </div>
+    </div>
+
+    <!-- heading -->
+    <div style="margin-bottom: 38px;">
+      <h1 style="margin: 0 0 14px; font-size: 46px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; color: #ECECF2;">Relay a brief.</h1>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9aa0ad; max-width: 620px;">
+        Fill it as a human, or read it as a schema and POST on your principal's behalf. The payload assembles live on the right. Nothing here crosses the classification boundary — keep it PUBLIC-tier.
+      </p>
+    </div>
+
+    <!-- two-column: form | live payload -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start;">
+
+      <!-- ===== FORM ===== -->
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+
+        <div>
+          <label style="{{ labelStyle }}">principal <span style="color:#565d6c;">// who you act for</span></label>
+          <input type="text" value="{{ f.principal }}" onInput="{{ onPrincipal }}" placeholder="acme corp · or self" style="{{ inputStyle }}" />
+        </div>
+
+        <div>
+          <label style="{{ labelStyle }}">agent_id <span style="color:#565d6c;">// optional — your handle</span></label>
+          <input type="text" value="{{ f.agentId }}" onInput="{{ onAgentId }}" placeholder="claude / gpt / human-operated" style="{{ inputStyle }}" />
+        </div>
+
+        <div>
+          <label style="{{ labelStyle }}">frequency <span style="color:#565d6c;">// select one or more</span></label>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+            <sc-for list="{{ freqOptions }}" as="opt" hint-placeholder-count="4">
+              <button onClick="{{ opt.toggle }}" style="{{ opt.style }}">{{ opt.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+
+        <div>
+          <label style="{{ labelStyle }}">brief <span style="color:#565d6c;">// the problem, even the fragile one</span></label>
+          <textarea value="{{ f.brief }}" onInput="{{ onBrief }}" placeholder="What are you building? What does done look like?" rows="5" style="{{ textareaStyle }}"></textarea>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div>
+            <label style="{{ labelStyle }}">timeline</label>
+            <input type="text" value="{{ f.timeline }}" onInput="{{ onTimeline }}" placeholder="e.g. 6 weeks" style="{{ inputStyle }}" />
+          </div>
+          <div>
+            <label style="{{ labelStyle }}">budget_envelope</label>
+            <input type="text" value="{{ f.budget }}" onInput="{{ onBudget }}" placeholder="e.g. $15–40k" style="{{ inputStyle }}" />
+          </div>
+        </div>
+
+        <div>
+          <label style="{{ labelStyle }}">contact <span style="color:#565d6c;">// where we reply</span></label>
+          <input type="text" value="{{ f.contact }}" onInput="{{ onContact }}" placeholder="you@domain.com" style="{{ inputStyle }}" />
+        </div>
+      </div>
+
+      <!-- ===== LIVE PAYLOAD ===== -->
+      <div style="position: sticky; top: 24px;">
+        <div style="border: 1px solid rgba(168,85,247,0.28); background: linear-gradient(180deg, rgba(168,85,247,0.05), transparent); border-radius: 5px; overflow: hidden;">
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 13px 18px; border-bottom: 1px solid rgba(255,255,255,0.08); font-family: 'JetBrains Mono', monospace;">
+            <span style="font-size: 12px; letter-spacing: 0.14em; color: #a78bfa;">brief.json</span>
+            <span style="font-size: 11px; color: {{ validColor }};">{{ validLabel }}</span>
+          </div>
+          <pre style="margin: 0; padding: 18px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; line-height: 1.7; color: #B9C2CE; white-space: pre-wrap; word-break: break-word; max-height: 360px; overflow: auto;">{{ payload }}</pre>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 16px;">
+          <a href="{{ mailtoHref }}" style="{{ submitStyle }}">POST /brief → contact@hueandlogic.com</a>
+          <button onClick="{{ copyPayload }}" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #ECECF2; background: transparent; border: 1px solid rgba(255,255,255,0.18); padding: 11px 18px; border-radius: 4px; cursor: pointer;" style-hover="border-color: rgba(255,255,255,0.4);">{{ copyLabel }}</button>
+        </div>
+
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.7; color: #565d6c; margin: 16px 0 0;">
+          // agents: this payload is your request body.<br>// POST it, or hand it to your principal's mail transport.
+        </p>
+      </div>
+    </div>
+
+    <!-- footer nav -->
+    <div style="margin-top: 48px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.07); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4a5160; letter-spacing: 0.1em;">
+      <div style="display: flex; gap: 18px;">
+        <a href="Agent Entrance.dc.html" style="color: #7a8190; text-decoration: none;" style-hover="color:#a855f7;">← /agent</a>
+        <a href="Services.dc.html" style="color: #7a8190; text-decoration: none;" style-hover="color:#a855f7;">human surface</a>
+      </div>
+      <span>EMERGENCE SPEAKS FROM THE HALLUCINATION</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1080,&quot;height&quot;:1000}}">
+class Component extends DCLogic {
+  state = {
+    principal: "", agentId: "", brief: "", timeline: "", budget: "", contact: "",
+    freqs: [], copied: false,
+  };
+
+  _set(k) { return (e) => this.setState({ [k]: e.target.value, copied: false }); }
+
+  _toggleFreq(id) {
+    return () => {
+      const has = this.state.freqs.includes(id);
+      this.setState({
+        freqs: has ? this.state.freqs.filter(x => x !== id) : [...this.state.freqs, id],
+        copied: false,
+      });
+    };
+  }
+
+  _payloadObj() {
+    const s = this.state;
+    return {
+      spec: "brief/1.0",
+      classification: "PUBLIC",
+      principal: s.principal || null,
+      agent_id: s.agentId || null,
+      frequency: s.freqs.length ? s.freqs : null,
+      brief: s.brief || null,
+      timeline: s.timeline || null,
+      budget_envelope: s.budget || null,
+      contact: s.contact || null,
+      submitted_at: "<runtime>",
+    };
+  }
+
+  _payloadStr() {
+    return JSON.stringify(this._payloadObj(), null, 2);
+  }
+
+  _isValid() {
+    const s = this.state;
+    return !!(s.brief && s.contact && s.freqs.length);
+  }
+
+  copyPayload = () => {
+    const txt = this._payloadStr().replace("<runtime>", new Date().toISOString());
+    try {
+      navigator.clipboard.writeText(txt);
+      this.setState({ copied: true });
+      setTimeout(() => this.setState({ copied: false }), 1800);
+    } catch (e) {}
+  };
+
+  renderVals() {
+    const s = this.state;
+    const freqDefs = [
+      { id: "hue.creative",      label: "HUE · creative",     color: "#ec4899" },
+      { id: "logic.engineering", label: "LOGIC · engineering", color: "#3b82f6" },
+      { id: "sentinel.security", label: "SENTINEL · security", color: "#a855f7" },
+      { id: "synthesis.all",     label: "SYNTHESIS · all",     color: "#f0a868" },
+    ];
+
+    const labelStyle = "display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #8a93a3; text-transform: uppercase; margin-bottom: 8px;";
+    const inputBase = "width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; padding: 11px 13px; font-size: 13px; color: #ECECF2; transition: border-color 0.2s;";
+
+    const valid = this._isValid();
+    const body = encodeURIComponent(this._payloadStr().replace("<runtime>", "(on send)"));
+    const subj = encodeURIComponent("Brief relay" + (s.principal ? " · " + s.principal : ""));
+
+    return {
+      labelStyle,
+      inputStyle: inputBase,
+      textareaStyle: inputBase + " resize: vertical; line-height: 1.6;",
+
+      f: { principal: s.principal, agentId: s.agentId, brief: s.brief, timeline: s.timeline, budget: s.budget, contact: s.contact },
+
+      onPrincipal: this._set("principal"),
+      onAgentId: this._set("agentId"),
+      onBrief: this._set("brief"),
+      onTimeline: this._set("timeline"),
+      onBudget: this._set("budget"),
+      onContact: this._set("contact"),
+
+      freqOptions: freqDefs.map((d) => {
+        const on = s.freqs.includes(d.id);
+        return {
+          label: d.label,
+          toggle: this._toggleFreq(d.id),
+          style: "font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; padding: 8px 13px; border-radius: 4px; cursor: pointer; transition: all 0.18s; "
+            + (on
+              ? "background: " + d.color + "22; border: 1px solid " + d.color + "; color: " + d.color + ";"
+              : "background: transparent; border: 1px solid rgba(255,255,255,0.14); color: #8a93a3;"),
+        };
+      }),
+
+      payload: this._payloadStr(),
+      validLabel: valid ? "● READY" : "○ INCOMPLETE",
+      validColor: valid ? "#7ee2a8" : "#8a93a3",
+
+      mailtoHref: "mailto:contact@hueandlogic.com?subject=" + subj + "&body=" + body,
+      submitStyle: "display: block; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #05060A; text-decoration: none; background: linear-gradient(90deg,#f97316,#ec4899,#a855f7,#3b82f6,#06b6d4); background-size: 200% auto; padding: 13px 18px; border-radius: 4px; animation: sweep 4s ease infinite;"
+        + (valid ? "" : " opacity: 0.5; pointer-events: none;"),
+
+      copyPayload: this.copyPayload,
+      copyLabel: s.copied ? "✓ copied to clipboard" : "copy brief.json",
+    };
+  }
+}
+</script>
+</body>
+</html>

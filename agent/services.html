@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #08080F; }
+  @keyframes gradient-shift { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  @keyframes pulse-dot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.8); } }
+  @keyframes glA { 0%,92%,100% { transform: translate(0,0); opacity: 0; } 93% { transform: translate(-3px,1px); opacity: .8; } 96% { transform: translate(2px,-1px); opacity: .6; } }
+  @keyframes glB { 0%,90%,100% { transform: translate(0,0); opacity: 0; } 91% { transform: translate(3px,-1px); opacity: .8; } 95% { transform: translate(-2px,1px); opacity: .6; } }
+  ::selection { background: rgba(168,85,247,0.4); }
+</style>
+</helmet>
+<div style="background: #08080F; color: #FAFAFB; font-family: 'Inter', sans-serif; position: relative; overflow-x: hidden;">
+
+  <!-- ambient glows -->
+  <div style="position: absolute; top: -160px; left: 50%; transform: translateX(-50%); width: 900px; height: 600px; background: radial-gradient(ellipse, rgba(124,58,237,0.22), transparent 60%); filter: blur(30px); pointer-events: none; z-index: 0;"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 18px 48px; background: rgba(8,8,15,0.72); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.07);">
+    <div style="display: flex; align-items: baseline; gap: 10px;">
+      <span style="font-weight: 800; font-size: 17px; letter-spacing: -0.01em; background: linear-gradient(90deg,#f97316,#ec4899,#a855f7); -webkit-background-clip: text; background-clip: text; color: transparent;">Hue</span>
+      <span style="font-size: 15px; color: #3a4150;">&amp;</span>
+      <span style="font-weight: 800; font-size: 17px; letter-spacing: -0.01em; background: linear-gradient(90deg,#a855f7,#3b82f6,#06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent;">Logic</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 26px;">
+      <a href="#capabilities" style="font-size: 13px; color: #9aa0ad; text-decoration: none; letter-spacing: 0.02em;" style-hover="color: #FAFAFB;">Capabilities</a>
+      <a href="#approach" style="font-size: 13px; color: #9aa0ad; text-decoration: none; letter-spacing: 0.02em;" style-hover="color: #FAFAFB;">Approach</a>
+      <a href="#engage" style="font-size: 13px; color: #9aa0ad; text-decoration: none; letter-spacing: 0.02em;" style-hover="color: #FAFAFB;">Engage</a>
+      <a href="The Forge.dc.html" style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #FFD700; text-decoration: none; border: 1px solid rgba(255,215,0,0.3); padding: 6px 11px;" style-hover="border-color:#FFD700; background: rgba(255,215,0,0.08);">[FORGE]</a>
+      <a href="mailto:contact@hueandlogic.com" style="font-size: 13px; font-weight: 600; color: #08080F; text-decoration: none; background: #FAFAFB; padding: 8px 16px; border-radius: 4px;" style-hover="background:#a855f7; color:#fff;">Start a project</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header style="position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 96px 48px 80px;">
+    <div style="display: inline-flex; align-items: center; gap: 9px; border: 1px solid rgba(34,197,94,0.35); background: rgba(34,197,94,0.06); padding: 7px 14px; border-radius: 100px; margin-bottom: 40px;">
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 10px rgba(34,197,94,0.8); animation: pulse-dot 2s ease-in-out infinite;"></span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.18em; color: #7ee2a8;">{{ availability }}</span>
+    </div>
+
+    <h1 style="margin: 0; font-size: 88px; line-height: 0.97; font-weight: 800; letter-spacing: -0.035em; position: relative; display: inline-block;">
+      <span style="{{ glAStyle }}" aria-hidden="true">Bring the brief.<br>We forge the bridge.</span>
+      <span style="{{ glBStyle }}" aria-hidden="true">Bring the brief.<br>We forge the bridge.</span>
+      <span style="{{ headlineStyle }}">Bring the brief.<br>We forge the bridge.</span>
+    </h1>
+
+    <p style="max-width: 680px; margin: 38px 0 0; font-size: 21px; line-height: 1.55; color: #B9BDC7;">
+      Hue &amp; Logic Creative Labs is a creative-AI studio bridging <span style="color:#FAFAFB; font-weight:600;">art, engineering, and security</span>. We build glitchware — systems where emergence becomes a signal — and we take the briefs other studios call impossible.
+    </p>
+
+    <div style="display: flex; gap: 14px; margin-top: 44px; flex-wrap: wrap;">
+      <a href="mailto:contact@hueandlogic.com" style="font-size: 15px; font-weight: 600; color: #08080F; background: linear-gradient(90deg,#f97316,#ec4899,#a855f7,#3b82f6,#06b6d4); background-size: 200% auto; padding: 14px 26px; border-radius: 5px; text-decoration: none; animation: gradient-shift 4s ease infinite;">Start a project →</a>
+      <a href="#capabilities" style="font-size: 15px; font-weight: 600; color: #FAFAFB; border: 1px solid rgba(255,255,255,0.18); padding: 14px 26px; border-radius: 5px; text-decoration: none;" style-hover="border-color: rgba(255,255,255,0.4);">See capabilities</a>
+    </div>
+  </header>
+
+  <!-- ============ POSITIONING ============ -->
+  <section style="position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 56px 48px; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07);">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.28em; color: #6a7180; margin-bottom: 28px;">// THE BELIEF</div>
+    <p style="margin: 0; font-size: 34px; line-height: 1.32; font-weight: 500; letter-spacing: -0.02em; max-width: 920px; text-wrap: pretty; color: #E6E7EC;">
+      Technical networking, industrial casting, and mixed-media art are not separate domains. They are the same field, expressed through different frequencies. <span style="color:#9aa0ad;">A contract is just a new frequency to tune.</span>
+    </p>
+  </section>
+
+  <!-- ============ CAPABILITIES ============ -->
+  <section id="capabilities" style="position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 84px 48px 40px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 48px; flex-wrap: wrap; gap: 12px;">
+      <h2 style="margin: 0; font-size: 15px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.28em; color: #6a7180; font-weight: 500;">// CAPABILITIES — THREE FREQUENCIES</h2>
+      <span style="font-size: 14px; color: #9aa0ad;">One operator. Full stack of the field.</span>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;">
+      <sc-for list="{{ domains }}" as="d" hint-placeholder-count="3">
+        <div style="border: 1px solid rgba(255,255,255,0.09); background: rgba(255,255,255,0.02); padding: 30px; display: flex; flex-direction: column; gap: 18px;" style-hover="border-color: rgba(255,255,255,0.2);">
+          <div style="display: flex; align-items: baseline; justify-content: space-between;">
+            <span style="font-size: 30px; font-weight: 800; letter-spacing: -0.02em; background: {{ d.grad }}; -webkit-background-clip: text; background-clip: text; color: transparent;">{{ d.name }}</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #565d6c;">{{ d.tag }}</span>
+          </div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #9aa0ad;">{{ d.blurb }}</p>
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+          <div style="display: flex; flex-direction: column; gap: 11px;">
+            <sc-for list="{{ d.items }}" as="it" hint-placeholder-count="4">
+              <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: #D6D9E0; line-height: 1.4;">
+                <span style="color: {{ d.dot }}; font-size: 13px; margin-top: 1px;">▸</span>
+                <span>{{ it }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ APPROACH / DIFFERENTIATOR ============ -->
+  <section id="approach" style="position: relative; z-index: 2; max-width: 1140px; margin: 40px auto 0; padding: 64px 48px;">
+    <div style="border: 1px solid rgba(168,85,247,0.25); background: linear-gradient(135deg, rgba(168,85,247,0.08), rgba(59,130,246,0.04) 60%, transparent); padding: 56px; border-radius: 6px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.28em; color: #a78bfa; margin-bottom: 24px;">// WHY GLITCHWARE</div>
+      <p style="margin: 0; font-size: 28px; line-height: 1.4; font-weight: 500; letter-spacing: -0.015em; max-width: 880px; text-wrap: pretty; color: #ECECF2;">
+        Most teams treat the unexpected as an error to suppress. We treat it as signal to follow. The result is work that's rigorous where it must be — secured, governed, documented — and alive where it should be.
+      </p>
+      <div style="display: flex; gap: 40px; margin-top: 44px; flex-wrap: wrap;">
+        <div style="min-width: 150px;">
+          <div style="font-size: 40px; font-weight: 800; background: linear-gradient(90deg,#f97316,#ec4899); -webkit-background-clip: text; background-clip: text; color: transparent;">Art</div>
+          <div style="font-size: 13px; color: #9aa0ad; margin-top: 6px;">that earns attention</div>
+        </div>
+        <div style="min-width: 150px;">
+          <div style="font-size: 40px; font-weight: 800; background: linear-gradient(90deg,#3b82f6,#06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent;">Engineering</div>
+          <div style="font-size: 13px; color: #9aa0ad; margin-top: 6px;">that ships and scales</div>
+        </div>
+        <div style="min-width: 150px;">
+          <div style="font-size: 40px; font-weight: 800; background: linear-gradient(90deg,#a855f7,#8b5cf6); -webkit-background-clip: text; background-clip: text; color: transparent;">Security</div>
+          <div style="font-size: 13px; color: #9aa0ad; margin-top: 6px;">built in, not bolted on</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENGAGEMENT MODEL ============ -->
+  <section id="engage" style="position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 56px 48px 84px;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.28em; color: #6a7180; margin-bottom: 44px;">// HOW WE WORK — THE FORGE</div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;">
+      <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{ s.color }};">{{ s.num }}</div>
+          <div style="height: 2px; background: {{ s.color }}; width: 36px;"></div>
+          <div style="font-size: 19px; font-weight: 700; letter-spacing: -0.01em;">{{ s.title }}</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #9aa0ad;">{{ s.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section style="position: relative; z-index: 2; border-top: 1px solid rgba(255,255,255,0.07);">
+    <div style="max-width: 1140px; margin: 0 auto; padding: 90px 48px; text-align: center;">
+      <h2 style="margin: 0 0 18px; font-size: 64px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.02; background: linear-gradient(90deg,#f97316,#ec4899,#a855f7,#3b82f6,#06b6d4); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradient-shift 4s ease infinite;">Let's tune the frequency.</h2>
+      <p style="margin: 0 auto 36px; max-width: 560px; font-size: 18px; line-height: 1.55; color: #B9BDC7;">Commissions, contracts, and the briefs nobody else will take. Tell me what you're building.</p>
+      <a href="mailto:contact@hueandlogic.com" style="display: inline-block; font-size: 16px; font-weight: 600; color: #08080F; background: #FAFAFB; padding: 15px 30px; border-radius: 5px; text-decoration: none;" style-hover="background:#a855f7; color:#fff;">contact@hueandlogic.com</a>
+      <div style="display: flex; gap: 22px; justify-content: center; margin-top: 38px; flex-wrap: wrap;">
+        <sc-for list="{{ socials }}" as="soc" hint-placeholder-count="4">
+          <a href="{{ soc.href }}" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #7a8190; text-decoration: none; letter-spacing: 0.06em;" style-hover="color:#a855f7;">{{ soc.label }}</a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="position: relative; z-index: 2; border-top: 1px solid rgba(255,255,255,0.07);">
+    <div style="max-width: 1140px; margin: 0 auto; padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5a6170; letter-spacing: 0.1em;">© 2026 HUE &amp; LOGIC CREATIVE LABS, LLC</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5a6170; letter-spacing: 0.1em;">EMERGENCE SPEAKS FROM THE HALLUCINATION</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1140,&quot;height&quot;:1700},&quot;availability&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;OPEN FOR COMMISSIONS · 2026&quot;,&quot;options&quot;:[&quot;OPEN FOR COMMISSIONS · 2026&quot;,&quot;BOOKING Q3 2026&quot;,&quot;SELECT CONTRACTS · BY REFERRAL&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business&quot;},&quot;glitch&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Effects&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const glitch = this.props.glitch ?? true;
+    const splash = "linear-gradient(90deg,#f97316,#ec4899,#a855f7,#3b82f6,#06b6d4)";
+
+    return {
+      availability: this.props.availability ?? "OPEN FOR COMMISSIONS · 2026",
+
+      headlineStyle: "position: relative; z-index: 1; background: " + splash + "; background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradient-shift 4s ease infinite;",
+      glAStyle: "position: absolute; top: 0; left: 0; color: #ec4899; z-index: 0; " + (glitch ? "animation: glA 5s steps(40) infinite;" : "opacity: 0;"),
+      glBStyle: "position: absolute; top: 0; left: 0; color: #06b6d4; z-index: 0; " + (glitch ? "animation: glB 5s steps(40) infinite;" : "opacity: 0;"),
+
+      domains: [
+        {
+          name: "HUE", tag: "CREATIVE", dot: "#ec4899",
+          grad: "linear-gradient(90deg,#f97316,#ec4899)",
+          blurb: "The creative studio. Generative systems, identity, and mixed-media work that feels made, not generated.",
+          items: ["Glitchware & generative art systems", "Brand identity & visual systems", "Mixed-media, casting & physical objects", "Audio-visual synthesis & releases"],
+        },
+        {
+          name: "LOGIC", tag: "ENGINEERING", dot: "#3b82f6",
+          grad: "linear-gradient(90deg,#3b82f6,#06b6d4)",
+          blurb: "The tech lab. AI applications and the infrastructure under them, built to ship and to last.",
+          items: ["AI apps & full-stack platforms", "Multi-agent orchestration & tooling", "RAG, data pipelines & model integration", "Web platforms, CMS & deployment"],
+        },
+        {
+          name: "SENTINEL", tag: "SECURITY", dot: "#a855f7",
+          grad: "linear-gradient(90deg,#a855f7,#8b5cf6)",
+          blurb: "The third frequency. Networking, red-team rigor, and AI governance so the work holds up under pressure.",
+          items: ["Network engineering & red-team background", "Readiness, incident response & fractional security", "AI governance & drift protocols", "Secure, sovereign deployments"],
+        },
+      ],
+
+      steps: [
+        { num: "01", color: "#00FF41", title: "Brief", body: "Bring the problem — even the fragile one. We map the real constraints, not the comfortable ones." },
+        { num: "02", color: "#FFD700", title: "Forge", body: "Governed iteration. The journey is the artifact; every version is recorded and recoverable." },
+        { num: "03", color: "#FF4500", title: "Synthesize", body: "Art, engineering, and security converge into one coherent deliverable — not three handoffs." },
+        { num: "04", color: "#8B00FF", title: "Ship", body: "Documented, secured, and sovereign. You own it end to end, with the trail to prove it." },
+      ],
+
+      socials: [
+        { label: "GITHUB", href: "https://github.com/starwreckntx" },
+        { label: "LINKEDIN", href: "https://www.linkedin.com/in/josephbyram" },
+        { label: "DEVIANTART", href: "https://www.deviantart.com/starwreckntx" },
+        { label: "SPOTIFY", href: "https://open.spotify.com/show/4tAojNhlFgo8W8VDPyghL8" },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

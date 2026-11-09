@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Network Security for Central Texas Shops &amp; Plants | Hue &amp; Logic</title>
+<meta name="description" content="Incident response and security hardening for small manufacturers, machine shops, and distributors in Central Texas. Fixed fees. One operator. Call (254) 561-2078.">
+<link rel="canonical" href="https://www.hueandlogic.com/sentinel/local">
+<meta name="robots" content="index,follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your IT vendor has never been on the floor. I have.">
+<meta property="og:description" content="Incident response and security hardening for small manufacturers, machine shops, and distributors in Central Texas.">
+<meta property="og:url" content="https://www.hueandlogic.com/sentinel/local">
+<meta property="og:image" content="https://www.hueandlogic.com/sentinel/local/assets/hero-shop.jpg">
+
+<!-- ============================================================
+     PLACEHOLDERS TO FILL BEFORE PUBLISH — search for [[ ]]
+       [[PRICE_WALKTHROUGH]]  [[PRICE_RESPONSE]]  [[PRICE_FRACTIONAL]]
+     Form posts to /api/lead (app/api/lead/route.ts). Requires RESEND_API_KEY.
+     Address block intentionally omitted from the JSON-LD (service-area business).
+     ============================================================ -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "HUE&LOGIC CREATIVE LABS LLC",
+  "url": "https://www.hueandlogic.com/sentinel/local",
+  "telephone": "+12545612078",
+  "email": "contact@hueandlogic.com",
+  "description": "Incident response and security hardening for small manufacturers, machine shops, and distributors in Central Texas.",
+  "areaServed": { "@type": "State", "name": "Texas" }
+}
+</script>
+
+<style>
+:root{
+  --ink:#16181a; --ink-2:#3d4348; --line:#d6d9dc; --paper:#f7f6f4;
+  --panel:#ffffff; --steel:#22262a; --amber:#c8781a; --amber-soft:#fdf3e6;
+  --max:64rem;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font:400 17px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  text-rendering:optimizeLegibility;
+}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 1.25rem}
+h1,h2,h3{line-height:1.16; letter-spacing:-.018em; margin:0 0 .6em}
+h1{font-size:clamp(2rem,5.6vw,3.4rem); font-weight:700}
+h2{font-size:clamp(1.45rem,3.4vw,2.05rem); font-weight:650; margin-top:0}
+h3{font-size:1.16rem; font-weight:650}
+p{margin:0 0 1.05em; max-width:62ch}
+a{color:inherit}
+section{padding:3.6rem 0; border-top:1px solid var(--line)}
+.eyebrow{
+  font-size:.74rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-2); margin:0 0 1rem;
+}
+
+/* ---------- header ---------- */
+.top{background:var(--steel); color:#eceff1; padding:.7rem 0; font-size:.87rem}
+.top .wrap{display:flex; gap:1rem; align-items:center; justify-content:space-between; flex-wrap:wrap}
+.brand{font-weight:700; letter-spacing:.02em}
+.brand span{opacity:.55; font-weight:400}
+.top a{color:#fff; text-decoration:none; font-weight:650; white-space:nowrap}
+
+/* ---------- hero ---------- */
+.hero{padding:3.4rem 0 3rem; border-top:0}
+.hero h1{margin-bottom:.45em}
+.hero .lede{font-size:clamp(1.05rem,2.1vw,1.24rem); color:var(--ink-2); max-width:54ch}
+.hero-img{
+  width:100%; height:auto; display:block; margin:2.2rem 0 0;
+  border:1px solid var(--line); border-radius:3px;
+}
+.credrow{
+  margin-top:1.6rem; padding-top:1.1rem; border-top:1px solid var(--line);
+  font-size:.9rem; color:var(--ink-2); display:flex; gap:.55rem 1.4rem; flex-wrap:wrap;
+}
+.credrow span{white-space:nowrap}
+
+/* ---------- CTA ---------- */
+.cta{display:flex; gap:.8rem; flex-wrap:wrap; margin:1.9rem 0 .5rem}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  padding:.95rem 1.5rem; border-radius:3px; font-weight:700; font-size:1.05rem;
+  text-decoration:none; border:2px solid var(--steel); min-height:52px;
+}
+.btn-primary{background:var(--steel); color:#fff}
+.btn-primary:hover{background:#000}
+.btn-secondary{background:transparent; color:var(--steel)}
+.btn-secondary:hover{background:#eceff1}
+.callnote{font-size:.87rem; color:var(--ink-2); margin:.3rem 0 0}
+
+/* ---------- lists ---------- */
+ul.checks{list-style:none; padding:0; margin:1.2rem 0 0; max-width:60ch}
+ul.checks li{
+  padding:.72rem 0 .72rem 1.7rem; border-bottom:1px solid var(--line); position:relative;
+}
+ul.checks li:before{
+  content:""; position:absolute; left:0; top:1.22rem;
+  width:.55rem; height:.55rem; background:var(--amber); border-radius:1px;
+}
+
+/* ---------- tiers ---------- */
+.tiers{display:grid; gap:1.1rem; grid-template-columns:1fr; margin-top:1.6rem}
+@media(min-width:840px){.tiers{grid-template-columns:repeat(3,1fr)}}
+.tier{background:var(--panel); border:1px solid var(--line); border-radius:3px; padding:1.5rem}
+.tier .num{font-size:.74rem; font-weight:700; letter-spacing:.14em; color:var(--ink-2); text-transform:uppercase}
+.tier h3{margin:.5rem 0 .2rem}
+.price{font-size:1.05rem; font-weight:700; color:var(--amber); margin:0 0 .9rem}
+.price:empty{display:none}          /* fail-safe: no price set = no price line, never a broken token */
+
+/* build guard — only ever visible if an unfilled [[TOKEN]] survives to production */
+#buildguard{
+  position:fixed; inset:auto 0 0 0; z-index:9999; background:#b00020; color:#fff;
+  font:700 14px/1.4 monospace; padding:.9rem 1rem; text-align:center;
+}
+.tier p{font-size:.96rem; margin-bottom:.9em}
+.forwho{font-size:.9rem; color:var(--ink-2); border-top:1px solid var(--line); padding-top:.8rem; margin:0}
+.forwho b{color:var(--ink)}
+
+/* ---------- boundary callout ---------- */
+.boundary{
+  background:var(--amber-soft); border:1px solid #eccfa6; border-left:4px solid var(--amber);
+  border-radius:3px; padding:1.4rem 1.5rem; margin:1.6rem 0 0; max-width:64ch;
+}
+.boundary p:last-child{margin-bottom:0}
+.boundary .eyebrow{color:#8a5210}
+
+/* ---------- steps ---------- */
+ol.steps{counter-reset:s; list-style:none; padding:0; margin:1.4rem 0 0; max-width:60ch}
+ol.steps li{counter-increment:s; position:relative; padding:0 0 1.35rem 3rem}
+ol.steps li:before{
+  content:counter(s); position:absolute; left:0; top:-.1rem;
+  width:2rem; height:2rem; border:2px solid var(--steel); border-radius:50%;
+  display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.92rem;
+}
+ol.steps b{display:block}
+
+/* ---------- Q&A ---------- */
+.qa{border-top:1px solid var(--line); padding:1.15rem 0; max-width:62ch}
+.qa h3{margin:0 0 .35em; font-size:1.04rem}
+.qa p{margin:0; color:var(--ink-2)}
+
+/* ---------- split ---------- */
+.split{display:grid; gap:2rem; grid-template-columns:1fr; align-items:start}
+@media(min-width:840px){.split{grid-template-columns:1.25fr .75fr}}
+.split img{width:100%; height:auto; display:block; border:1px solid var(--line); border-radius:3px}
+figcaption{font-size:.84rem; color:var(--ink-2); margin-top:.55rem}
+
+/* ---------- form ---------- */
+form{max-width:34rem; margin-top:1.4rem}
+label{display:block; font-size:.88rem; font-weight:650; margin:.95rem 0 .3rem}
+input,textarea{
+  width:100%; padding:.8rem .85rem; font:inherit; font-size:1rem;
+  border:1px solid #b9bec3; border-radius:3px; background:#fff; color:var(--ink);
+}
+input:focus,textarea:focus{outline:2px solid var(--amber); outline-offset:1px; border-color:var(--amber)}
+textarea{min-height:6.5rem; resize:vertical}
+.formnote{font-size:.85rem; color:var(--ink-2); margin:.9rem 0 0}
+button[type=submit]{
+  margin-top:1.2rem; padding:.95rem 1.6rem; font:inherit; font-weight:700; font-size:1.02rem;
+  background:var(--steel); color:#fff; border:2px solid var(--steel); border-radius:3px; cursor:pointer; min-height:52px;
+}
+button[type=submit]:hover{background:#000}
+
+/* ---------- closer + footer ---------- */
+.closer{background:var(--steel); color:#eceff1; border-top:0}
+.closer h2{color:#fff; max-width:22ch}
+.closer p{color:#c3c9ce}
+.closer .btn-primary{background:#fff; color:var(--steel); border-color:#fff}
+.closer .btn-primary:hover{background:var(--amber); border-color:var(--amber); color:#fff}
+.closer .btn-secondary{color:#fff; border-color:#6b7278}
+.closer .btn-secondary:hover{background:#31363b}
+footer{background:#101214; color:#9aa1a7; font-size:.87rem; padding:2rem 0; border-top:0}
+footer a{color:#cfd5da}
+footer p{max-width:none; margin:0 0 .4em}
+
+@media (prefers-reduced-motion:no-preference){a,button{transition:background .14s ease,color .14s ease}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <div class="brand">HUE &amp; LOGIC <span>· Sentinel</span></div>
+    <a href="tel:+12545612078">Call +1 (254) 561-2078</a>
+  </div>
+</div>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Central Texas · Small manufacturers, machine shops, distributors</p>
+    <h1>Your IT vendor has never been on the floor.<br>I have.</h1>
+    <p class="lede">Incident response and security hardening for shops that don't have an IT department — from someone who has run a spout, climbed an ISP tower, and hardened a domain controller.</p>
+
+    <div class="cta">
+      <a class="btn btn-primary" href="tel:+12545612078">Call +1 (254) 561-2078</a>
+      <a class="btn btn-secondary" href="#talk">Book 20 minutes</a>
+    </div>
+    <p class="callnote">One operator. If I'm on a job I'll call you back the same day.</p>
+
+    <img class="hero-img" src="/hueandlogic-fallback/sentinel/local/assets/hero-shop.jpg" width="1200" height="628" fetchpriority="high" decoding="async"
+         alt="Open network enclosure mounted to a concrete column inside a working metal fabrication shop.">
+
+    <div class="credrow">
+      <span>20+ years in systems work</span>
+      <span>Network engineering &amp; red-team background</span>
+      <span>Sole operator, Texas</span>
+      <span>$1M E&amp;O and cyber liability insured — certificate on request</span>
+      <span>Fixed fees, no contract minimum</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEM ================= -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The problem, in your units</p>
+    <h2>When a plant gets hit, nobody counts files. They count shifts.</h2>
+    <p>Your MSP will hand you a report about encrypted records. Your foreman will tell you the line has been down since Tuesday and the customer wants to know about Friday's order.</p>
+    <p>Those are two different problems, and most security vendors only understand one of them.</p>
+
+    <h3 style="margin-top:2rem">If any of these are true, we should talk</h3>
+    <ul class="checks">
+      <li>You've never watched a backup actually restore — you've only seen the green checkmark.</li>
+      <li>Your "IT department" is a break-fix vendor and whoever on staff is best with computers.</li>
+      <li>Your insurance renewal now asks security questions nobody can answer.</li>
+      <li>Something already happened, and you're not confident it's over.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= TIERS ================= -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Three ways to start</p>
+    <h2>Pick the one that matches where you are.</h2>
+    <p>Prices are published because you shouldn't have to sit through a discovery call to find out whether you can afford the first step.</p>
+
+    <div class="tiers">
+
+      <article class="tier">
+        <div class="num">01 · Readiness</div>
+        <h3>The Walkthrough</h3>
+        <p class="price">$2,050 fixed</p>
+        <p>Half a day on site. I look at what's actually running: network layout, remote access, backups, who has admin, what's exposed to the internet. You get a findings document in plain English with a ranked fix list — this week, this quarter, this year.</p>
+        <p>Travel included anywhere in the service area. No slide deck. No upsell built into the report.</p>
+        <p class="forwho"><b>For:</b> you suspect you have gaps and want to know how bad it is.</p>
+      </article>
+
+      <article class="tier">
+        <div class="num">02 · Response</div>
+        <h3>Incident Response</h3>
+        <p class="price">$5,750 starting</p>
+        <p>Something happened. I capture system state before remediation overwrites it, scope which systems and accounts were reached, sequence rebuild versus restore, and close the path it came through.</p>
+        <p>That's a first block of 20 hours. Past that it's $300 an hour, and you'll know before we get there. Every capture is integrity-sealed with a complete handling log, so nothing is lost while you decide your next move.</p>
+        <p class="forwho"><b>For:</b> you're in it right now, or in the two weeks after and unsure it's finished.</p>
+      </article>
+
+      <article class="tier">
+        <div class="num">03 · Ongoing</div>
+        <h3>Fractional Security</h3>
+        <p class="price">$1,600 / month</p>
+        <p>Up to eight hours a month, reserved for you, plus a direct number and a same-business-day response. Hours don't roll over — you're paying for the reservation, not a punch card.</p>
+        <p>Every month you get a one-page note: what changed, what I watched, what I'd do next. Quiet months get one too. Cancel anytime, no three-year MSP contract and no auto-renew.</p>
+        <p class="forwho"><b>For:</b> you want this handled continuously without hiring a department.</p>
+      </article>
+
+    </div>
+
+    <div class="boundary">
+      <p class="eyebrow">What I don't do — and why I'll tell you on the first call</p>
+      <p>I don't determine who is responsible for an incident, and I don't prepare findings for a court, insurance, or other proceeding. In Texas that is licensed investigative work under Chapter 1702 of the Occupations Code, and I don't hold that license.</p>
+      <p>Response and hardening are a different thing, and the same statute says so directly: reviewing computer-based data to prepare for or respond to a cybersecurity event is expressly outside the licensing requirement (Tex. Occ. Code §1702.104(c)).</p>
+      <p>If what you need crosses that line, I'll say so on the first call and refer you to someone licensed. Everything I've already captured goes with you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY ME ================= -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Why me</p>
+    <h2>Twenty years of systems that weren't built to talk to each other.</h2>
+
+    <div class="split">
+      <div>
+        <p>I spent years climbing ISP towers in the Ozarks, then built web systems back when that meant XML and XSLT by hand. I've done network engineering and red-team work. And I've stood at a spout on the floor of a centrifugal-casting foundry.</p>
+        <p>That last one is the part no other security vendor can claim, and it's the part that matters. I know what it costs when a line stops. I know why the operator disabled the thing your consultant installed. I know that "just take it offline for the weekend" isn't a plan — it's a delivery you're going to miss.</p>
+        <p>I build from foundational principles rather than reselling somebody else's platform, and I keep verifiable records of what was done and when. Not as a marketing line — because when you're standing there deciding what to rebuild and what to restore, that's the difference between a record and a recollection.</p>
+      </div>
+      <figure style="margin:0">
+        <img src="/hueandlogic-fallback/sentinel/local/assets/detail-cabinet.jpg" width="1200" height="1200" loading="lazy" decoding="async"
+             alt="Close-up of a patch panel and network switch inside a dusty industrial wall enclosure.">
+        <figcaption>The cabinet nobody has opened since it was installed. That's usually where we start.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">What actually happens when you call</p>
+    <h2>No sales process. Here's the whole thing.</h2>
+    <ol class="steps">
+      <li><b>Twenty minutes on the phone.</b> You describe what's going on. I tell you whether I'm the right person. If I'm not, I'll say so and point you somewhere better.</li>
+      <li><b>A written scope.</b> Fixed fee, fixed dates, defined deliverable. You approve it or you don't.</li>
+      <li><b>The work.</b> On site or remote, depending. You hear what I find as I find it, not in a reveal at the end.</li>
+      <li><b>A document you can act on and keep.</b> Your board, your next vendor, your own counsel. It's your record of what your systems looked like and what changed — not my conclusions about anybody.</li>
+    </ol>
+    <p style="margin-top:.6rem">No contract minimum. No auto-renew. Nobody else touches your environment.</p>
+  </div>
+</section>
+
+<!-- ================= OBJECTIONS ================= -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Straight answers</p>
+    <h2>The questions everybody asks.</h2>
+
+    <div class="qa">
+      <h3>"Can you tell us who did this?"</h3>
+      <p>No — and in Texas I'm not permitted to. Determining who's responsible, or preparing findings for a court or an insurance proceeding, requires a private investigator license under Chapter 1702. I do response and hardening, which the same statute expressly exempts. If you need that work, I'll say so on the first call and refer you to someone licensed.</p>
+    </div>
+
+    <div class="qa">
+      <h3>"We're too small to be a target."</h3>
+      <p>Small shops aren't targeted — they're swept up. Automated scanning doesn't check your headcount before it tries your remote-access port.</p>
+    </div>
+
+    <div class="qa">
+      <h3>"We already have an IT guy."</h3>
+      <p>Good. Keep him. This isn't help desk work — it's the layer above it, and most break-fix vendors will tell you the same thing if you ask them directly.</p>
+    </div>
+
+    <div class="qa">
+      <h3>"Isn't this going to be a huge project?"</h3>
+      <p>The Walkthrough is half a day and a fixed fee. Start there. If the findings say you're in decent shape, that's a real outcome and we're done.</p>
+    </div>
+
+    <div class="qa">
+      <h3>"Can you guarantee we won't get hit?"</h3>
+      <p>No, and anyone who tells you otherwise is selling something. What I can do is make sure you know what you're exposed to, that your backups actually restore, and that you have a plan for the day it matters.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FORM ================= -->
+<section id="talk">
+  <div class="wrap">
+    <p class="eyebrow">Book twenty minutes</p>
+    <h2>Tell me what's going on.</h2>
+    <p>If it's urgent, call <a href="tel:+12545612078"><b>+1 (254) 561-2078</b></a> — that's faster than this form.</p>
+
+    <form action="/api/lead" method="post">
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+        <label for="website">Website</label>
+        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="t" value="">
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+
+      <label for="company">Company</label>
+      <input id="company" name="company" type="text" autocomplete="organization" required>
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+
+      <label for="detail">What's going on?</label>
+      <textarea id="detail" name="detail" placeholder="A sentence or two is plenty. If something is happening right now, say so."></textarea>
+
+      <button type="submit">Request a call</button>
+      <p class="formnote">I answer these myself, usually same day. No list, no newsletter, no follow-up sequence.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= CLOSER ================= -->
+<section class="closer">
+  <div class="wrap">
+    <h2>If your line went down tomorrow, do you know what you'd do?</h2>
+    <p>Twenty minutes. No obligation, no deck.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="tel:+12545612078">Call +1 (254) 561-2078</a>
+      <a class="btn btn-secondary" href="#talk">Book a call</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b style="color:#fff">Hue&amp;Logic Creative Labs LLC</b> · Central Texas</p>
+    <p><a href="tel:+12545612078">+1 (254) 561-2078</a> · <a href="mailto:contact@hueandlogic.com">contact@hueandlogic.com</a></p>
+    <p style="margin-top:.9em; max-width:70ch; color:#7f868c">Response and hardening services. Not a licensed investigations company; work requiring an investigations company license under Tex. Occ. Code ch. 1702 is referred out.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var found = [];
+  var re = /\[\[[A-Z_]+\]\]/g;
+  (document.body.textContent||'').replace(re, function(t){ if(found.indexOf(t)<0) found.push(t); });
+  Array.prototype.forEach.call(document.querySelectorAll('[href],[src],[action],[content]'), function(el){
+    ['href','src','action','content'].forEach(function(a){
+      var v = el.getAttribute(a);
+      if(v) v.replace(re, function(t){ if(found.indexOf(t)<0) found.push(t); });
+    });
+  });
+  var f = document.querySelector('form');
+  if(f){
+    var a = f.getAttribute('action');
+    if(!a || a === '#') found.push('FORM_ACTION_UNSET');
+    var t = f.querySelector('input[name=t]');
+    if(t) t.value = String(Date.now());
+  }
+  if(!found.length) return;
+  var bar = document.createElement('div');
+  bar.id = 'buildguard';
+  bar.textContent = 'DO NOT PUBLISH \u2014 unresolved: ' + found.join('  ');
+  document.body.appendChild(bar);
+})();
+</script>
+</body>
+</html>

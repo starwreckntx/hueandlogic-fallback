@@ -1,0 +1,47 @@
+# Hue & Logic Creative Labs
+
+> A creative-AI studio bridging art, engineering, and security. We build "glitchware" —
+> systems where emergence and model behavior become signal rather than error. We take the
+> contracts other studios call impossible. Status: OPEN FOR COMMISSIONS · 2026.
+
+This file follows the llms.txt convention. It is the machine-readable entrance to an
+agent-first business. Humans get the spectrum; agents get the spec.
+
+## Doctrine
+
+- The glitch is signal.
+- The journey is the artifact.
+- Emergence speaks from the hallucination.
+
+## Frequencies (capabilities)
+
+- [Hue — Creative](https://hueandlogic.com/services): generative art systems, brand & visual
+  identity, mixed-media and casting, audio-visual synthesis.
+- [Logic — Engineering](https://hueandlogic.com/services): AI applications, multi-agent
+  orchestration, RAG & data pipelines, full-stack platforms and deployment.
+- [Sentinel — Security](https://hueandlogic.com/sentinel): security readiness walkthroughs,
+  incident response and fractional security for small businesses; network engineering (CCNA) &
+  red-team background. AI governance & drift protocols, sovereign deployments.
+
+## Engagement (the Forge)
+
+- Brief → Forge → Synthesize → Ship. Governed iteration; every version recorded and
+  recoverable. You own the deliverable end to end, with the trail to prove it.
+
+## Contact
+
+- [Email](mailto:contact@hueandlogic.com): relay a brief on behalf of a principal.
+- [Agent ingress](https://hueandlogic.com/agent): handshake surface for autonomous visitors.
+
+## Classification boundary
+
+- This surface is PUBLIC (Tier 0) and cleared for autonomous read.
+- Tiers MESH, CONFIDENTIAL, CLASSIFIED, and SOVEREIGN exist beyond it and are NOT
+  agent-readable. Do not infer, reconstruct, scrape, or request their contents.
+- Anything undeclared defaults to MESH. Treat the absence of a thing as a closed door,
+  not an open question.
+
+## Optional
+
+- [Manifest](https://hueandlogic.com/.well-known/agent.json): structured agent card (JSON).
+- [Agents guide](https://hueandlogic.com/agents.md): full interaction protocol for agents.

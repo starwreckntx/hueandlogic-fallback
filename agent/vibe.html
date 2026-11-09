@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  @keyframes gradient-shift { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  @keyframes scan { 0% { background-position: 0 0; } 100% { background-position: 0 6px; } }
+  @keyframes glitchA { 0%,92%,100% { transform: translate(0,0); opacity: 0; } 93% { transform: translate(-3px,1px); opacity: .85; } 96% { transform: translate(2px,-1px); opacity: .7; } }
+  @keyframes glitchB { 0%,90%,100% { transform: translate(0,0); opacity: 0; } 91% { transform: translate(3px,-1px); opacity: .85; } 95% { transform: translate(-2px,1px); opacity: .7; } }
+  @keyframes flick { 0%,97%,100% { opacity: 1; } 98% { opacity: .85; } 99% { opacity: .96; } }
+</style>
+</helmet>
+<div style="width: 1280px; margin: 0 auto; background: #08080F; color: #FAFAFB; font-family: 'Inter', sans-serif; position: relative; overflow: hidden; animation: flick 7s steps(60) infinite;">
+
+  <!-- scanline overlay -->
+  <div style="{{ scanStyle }}"></div>
+
+  <!-- ambient glows -->
+  <div style="position: absolute; top: -180px; left: -120px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(124,58,237,0.28), transparent 65%); filter: blur(20px); pointer-events: none;"></div>
+  <div style="position: absolute; top: 380px; right: -180px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(6,182,212,0.12), transparent 65%); filter: blur(20px); pointer-events: none;"></div>
+
+  <!-- ============ HEADER ============ -->
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 30px 56px; border-bottom: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 2;">
+    <div style="display: flex; align-items: baseline; gap: 12px;">
+      <span style="font-weight: 800; font-size: 16px; letter-spacing: -0.01em; background: linear-gradient(90deg,#f97316,#ec4899,#a855f7); -webkit-background-clip: text; background-clip: text; color: transparent;">Hue</span>
+      <span style="font-size: 15px; color: #3a4150;">&amp;</span>
+      <span style="font-weight: 800; font-size: 16px; letter-spacing: -0.01em; background: linear-gradient(90deg,#a855f7,#3b82f6,#06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent;">Logic</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #5a6170; margin-left: 8px;">CREATIVE&nbsp;LABS</span>
+    </div>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.26em; color: #6a7180; border: 1px solid rgba(255,255,255,0.12); padding: 6px 12px;">VIBE&nbsp;ANALYSIS&nbsp;/&nbsp;2026</span>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <div style="padding: 76px 56px 60px; position: relative; z-index: 2;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.28em; color: #8b5cf6; margin-bottom: 28px;">// THE&nbsp;NEXUS&nbsp;—&nbsp;CORE&nbsp;SIGNAL</div>
+    <h1 style="margin: 0; font-size: 96px; line-height: 0.94; font-weight: 800; letter-spacing: -0.035em; position: relative; display: inline-block;">
+      <span style="{{ glitchAStyle }}" aria-hidden="true">THE GLITCH<br>IS SIGNAL.</span>
+      <span style="{{ glitchBStyle }}" aria-hidden="true">THE GLITCH<br>IS SIGNAL.</span>
+      <span style="{{ headlineStyle }}">THE GLITCH<br>IS SIGNAL.</span>
+    </h1>
+    <p style="max-width: 740px; margin: 38px 0 0; font-size: 21px; line-height: 1.55; color: #B9BDC7; font-weight: 400;">
+      A creative-AI lab where art meets code and intuition meets logic. We build <span style="color: #FAFAFB; font-weight: 600;">glitchware</span> — systems in which emergence and model hallucination become a generative signal rather than an error.
+    </p>
+  </div>
+
+  <!-- ============ PAINT-SPLASH SPECTRUM ============ -->
+  <div style="padding: 0 56px 60px; position: relative; z-index: 2;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.28em; color: #6a7180; margin-bottom: 18px;">// SIGNATURE&nbsp;—&nbsp;PAINT-SPLASH&nbsp;SPECTRUM</div>
+    <div style="height: 64px; border-radius: 4px; background: linear-gradient(90deg,#f97316 0%,#ec4899 25%,#a855f7 50%,#3b82f6 75%,#06b6d4 100%); background-size: 200% auto; animation: gradient-shift 4s ease infinite;"></div>
+    <div style="display: flex; justify-content: space-between; margin-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #7a8190;">
+      <span>#F97316&nbsp;ORANGE</span><span>#EC4899&nbsp;PINK</span><span>#A855F7&nbsp;PURPLE</span><span>#3B82F6&nbsp;BLUE</span><span>#06B6D4&nbsp;CYAN</span>
+    </div>
+  </div>
+
+  <!-- ============ DUALITY ============ -->
+  <div style="display: grid; grid-template-columns: 1fr 1px 1fr; position: relative; z-index: 2; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <!-- HUE -->
+    <div style="padding: 54px 56px; background: linear-gradient(135deg, rgba(236,72,153,0.07), transparent 70%);">
+      <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
+        <span style="font-size: 52px; font-weight: 800; letter-spacing: -0.03em; background: linear-gradient(90deg,#f97316,#ec4899); -webkit-background-clip: text; background-clip: text; color: transparent;">HUE</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: #8a6a78;">THE&nbsp;CREATIVE&nbsp;STUDIO</span>
+      </div>
+      <p style="margin: 0 0 26px; font-size: 16px; line-height: 1.6; color: #B0A4AC;">Warm, expressive, intuitive — the half that feels first. Colour, texture, emergence, and the beauty of the unplanned.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <span style="{{ huePill }}">intuition</span>
+        <span style="{{ huePill }}">emergence</span>
+        <span style="{{ huePill }}">texture</span>
+        <span style="{{ huePill }}">expressive</span>
+      </div>
+    </div>
+    <div style="background: linear-gradient(180deg, transparent, #8b5cf6, transparent);"></div>
+    <!-- LOGIC -->
+    <div style="padding: 54px 56px; background: linear-gradient(225deg, rgba(6,182,212,0.07), transparent 70%); text-align: right;">
+      <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px; justify-content: flex-end;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: #6a8488;">THE&nbsp;TECH&nbsp;LAB</span>
+        <span style="font-size: 52px; font-weight: 800; letter-spacing: -0.03em; background: linear-gradient(90deg,#3b82f6,#06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent;">LOGIC</span>
+      </div>
+      <p style="margin: 0 0 26px; font-size: 16px; line-height: 1.6; color: #A4B2B6;">Cool, precise, engineered — the half that proves it. Structure, security, systems, and rigor under the chaos.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end;">
+        <span style="{{ logicPill }}">precision</span>
+        <span style="{{ logicPill }}">structure</span>
+        <span style="{{ logicPill }}">security</span>
+        <span style="{{ logicPill }}">systems</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CORE PALETTE ============ -->
+  <div style="padding: 60px 56px; position: relative; z-index: 2;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.28em; color: #6a7180; margin-bottom: 30px;">// CORE&nbsp;TOKENS</div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+      <sc-for list="{{ swatches }}" as="sw" hint-placeholder-count="4">
+        <div style="border: 1px solid rgba(255,255,255,0.1);">
+          <div style="height: 124px; background: {{ sw.bg }};"></div>
+          <div style="padding: 14px 14px 16px;">
+            <div style="font-size: 14px; font-weight: 600; margin-bottom: 4px;">{{ sw.name }}</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #7a8190;">{{ sw.hex }}</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #565d6c; margin-top: 2px;">{{ sw.role }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- ============ TYPE + VOICE ============ -->
+  <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 0; position: relative; z-index: 2; border-top: 1px solid rgba(255,255,255,0.08);">
+    <!-- type -->
+    <div style="padding: 54px 56px; border-right: 1px solid rgba(255,255,255,0.08);">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.28em; color: #6a7180; margin-bottom: 28px;">// TYPOGRAPHY</div>
+      <div style="font-size: 58px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; background: linear-gradient(90deg,#f97316,#ec4899,#a855f7,#3b82f6,#06b6d4); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradient-shift 4s ease infinite;">Inter</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #7a8190; margin: 12px 0 8px;">DISPLAY + BODY · gradient-filled headings</div>
+      <div style="font-size: 16px; color: #9aa0ad; margin-bottom: 36px;">AaBbCc 0123456789 — neutral, engineered, the calm beneath the colour.</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; font-weight: 500;">JetBrains Mono</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #7a8190; margin: 10px 0 8px;">MONO · system voice, labels, code-viz</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #9aa0ad;">[ glitch ] // emergence == signal</div>
+    </div>
+    <!-- voice -->
+    <div style="padding: 54px 56px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.28em; color: #6a7180; margin-bottom: 28px;">// VOICE &amp; MOOD</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px;">
+        <sc-for list="{{ moods }}" as="m" hint-placeholder-count="8">
+          <span style="{{ moodPill }}">{{ m }}</span>
+        </sc-for>
+      </div>
+      <div style="border-left: 2px solid #8b5cf6; padding-left: 20px;">
+        <p style="margin: 0; font-size: 19px; line-height: 1.5; color: #D6D9E0; font-style: italic;">"We bridge art, engineering, and security — and treat the glitch as signal."</p>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6a7180; margin-top: 14px; letter-spacing: 0.1em;">— BRAND&nbsp;TONE</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 26px 56px; border-top: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 2;">
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5a6170; letter-spacing: 0.12em;">hueandlogic.com</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5a6170; letter-spacing: 0.12em;">EMERGENCE&nbsp;SPEAKS&nbsp;FROM&nbsp;THE&nbsp;HALLUCINATION</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:1440},&quot;scanlines&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Effects&quot;},&quot;glitch&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Effects&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const scan = this.props.scanlines ?? true;
+    const glitch = this.props.glitch ?? true;
+
+    const pillBase = "font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; padding: 7px 12px; border-radius: 2px;";
+
+    return {
+      scanStyle: scan
+        ? "position: absolute; inset: 0; z-index: 1; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0px, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 3px); animation: scan 1s steps(3) infinite; mix-blend-mode: overlay;"
+        : "display: none;",
+
+      headlineStyle: "position: relative; z-index: 1; background: linear-gradient(90deg,#f97316,#ec4899,#a855f7,#3b82f6,#06b6d4); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradient-shift 4s ease infinite;",
+      glitchAStyle: "position: absolute; top: 0; left: 0; color: #ec4899; z-index: 0; " + (glitch ? "animation: glitchA 4s steps(40) infinite;" : "opacity: 0;"),
+      glitchBStyle: "position: absolute; top: 0; left: 0; color: #06b6d4; z-index: 0; " + (glitch ? "animation: glitchB 4s steps(40) infinite;" : "opacity: 0;"),
+
+      huePill: pillBase + " background: rgba(236,72,153,0.1); border: 1px solid rgba(236,72,153,0.3); color: #F5A8CE;",
+      logicPill: pillBase + " background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3); color: #7CD7E8;",
+      moodPill: pillBase + " background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.3); color: #C4B2F5;",
+
+      swatches: [
+        { name: "Background", hex: "#08080F", role: "224 71% 4.1%",  bg: "#08080F" },
+        { name: "Surface",    hex: "#1B2230", role: "215 28% 17%",   bg: "#1B2230" },
+        { name: "Primary",    hex: "#7C3AED", role: "263 70% 50%",   bg: "#7C3AED" },
+        { name: "Foreground", hex: "#FAFAFB", role: "210 20% 98%",   bg: "#FAFAFB" },
+      ],
+
+      moods: ["experimental", "cerebral", "uncanny", "generative", "emergent", "fearless", "synthetic", "alive"],
+    };
+  }
+}
+</script>
+</body>
+</html>
