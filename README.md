@@ -1,11 +1,19 @@
 # Hue & Logic — static fallback mirror
 
 Static fallback copy of the public pages of hueandlogic.com, built from the site's
-main branch (commit 60e7683). Build output only. No source, no server routes, no forms backend.
+main branch (commit 60e7683) plus the price change described below. Build output only.
+No source, no server routes, no forms backend.
 
 This tree is the **root-path** build (assets at `/…`) for serving on the custom domain
 `www.hueandlogic.com` via GitHub Pages. Excluded from this mirror: `/screening`,
 `/api`, `/admin`, `/console`, and any Maxtena / pLEO / Hydra / Starshield content.
+
+## 2026-11-10 rebuild: prices filled in
+
+- The homepage offer cards and the tiers on `/logic/assessment` now show "from" prices.
+  They are floors, not quotes: the written scope sets the final number.
+- Built from the site branch `claude/set-from-prices` (one commit on top of 60e7683).
+  Every other page has the same visible text, and every non-build asset is byte-identical.
 
 ## 2026-11-10 rebuild: the studio entrance is back
 
