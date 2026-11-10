@@ -27,9 +27,10 @@ This tree is the **root-path** build (assets at `/…`) for serving on the custo
   every non-build asset is byte-identical.
 - The first build's `_next` files are kept, so pages already cached by browsers keep loading.
 
-Forms and ARC chat need a server and will not work on this static copy. That includes the
-"ARC keeps the door" box at the doors; both doors work without it. Contact remains
-available at contact@hueandlogic.com.
+The contact page offers email in place of the form, because the form has no server to
+send to on this copy. That change lives only in the mirror build; the site source still
+has the form. ARC chat also needs a server and will not answer here. That includes the
+"ARC keeps the door" box at the doors; both doors work without it.
 
 ## How this build was made
 
@@ -40,7 +41,8 @@ From the site repo at the commit above:
 3. `app/robots.ts` and `app/sitemap.ts`: add `export const dynamic = 'force-static'`, and
    drop `/screening` from the sitemap.
 4. `app/page.tsx`: add the inline arrival script described above.
-5. `NEXT_OUTPUT_MODE=export next build`, then copy `out/` here and keep `CNAME`,
+5. `app/contact/page.tsx`: replace the form with an email button (mirror only).
+6. `NEXT_OUTPUT_MODE=export next build`, then copy `out/` here and keep `CNAME`,
    `.nojekyll` and this file.
 
 GitHub Pages project URL (subpath) is obsolete after this cutover; use the custom domain.
