@@ -1,0 +1,315 @@
+1:"$Sreact.fragment"
+2:I[7589,["4277","static/chunks/4277-72bf7121d65061b0.js","1740","static/chunks/1740-5bf1d164e093aba1.js","231","static/chunks/231-b1b03a6e4e65fbef.js","4401","static/chunks/4401-5b51441543036233.js","7177","static/chunks/app/layout-e3cd561e846862a2.js"],"ThemeProvider"]
+3:I[8234,["4277","static/chunks/4277-72bf7121d65061b0.js","1740","static/chunks/1740-5bf1d164e093aba1.js","231","static/chunks/231-b1b03a6e4e65fbef.js","4401","static/chunks/4401-5b51441543036233.js","7177","static/chunks/app/layout-e3cd561e846862a2.js"],"default"]
+4:I[3874,["4277","static/chunks/4277-72bf7121d65061b0.js","1740","static/chunks/1740-5bf1d164e093aba1.js","231","static/chunks/231-b1b03a6e4e65fbef.js","4401","static/chunks/4401-5b51441543036233.js","7177","static/chunks/app/layout-e3cd561e846862a2.js"],"default"]
+5:I[2792,["4277","static/chunks/4277-72bf7121d65061b0.js","1740","static/chunks/1740-5bf1d164e093aba1.js","231","static/chunks/231-b1b03a6e4e65fbef.js","4401","static/chunks/4401-5b51441543036233.js","7177","static/chunks/app/layout-e3cd561e846862a2.js"],"default"]
+6:I[1604,[],""]
+7:I[3986,[],""]
+8:I[4277,["4277","static/chunks/4277-72bf7121d65061b0.js","1740","static/chunks/1740-5bf1d164e093aba1.js","231","static/chunks/231-b1b03a6e4e65fbef.js","3035","static/chunks/3035-97cc96e806c85d98.js","8974","static/chunks/app/page-fbb1bde70bbb51f4.js"],""]
+9:I[794,["4277","static/chunks/4277-72bf7121d65061b0.js","1740","static/chunks/1740-5bf1d164e093aba1.js","231","static/chunks/231-b1b03a6e4e65fbef.js","3035","static/chunks/3035-97cc96e806c85d98.js","8974","static/chunks/app/page-fbb1bde70bbb51f4.js"],"Image"]
+16:I[1424,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/cbb6b804a2385471.css","style"]
+:HL["/_next/static/css/a6fc798b75e96a95.css","style"]
+0:{"P":null,"b":"CmztSsWCrDhUYpZrw28h3","p":"","c":["","articles","swarm-response-sop",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","swarm-response-sop","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cbb6b804a2385471.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a6fc798b75e96a95.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__className_d8ebd1","children":["$","$L2",null,{"attribute":"class","defaultTheme":"dark","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$L3",null,{"children":[["$","$L4",null,{}],["$","$L5",null,{}]]}],["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L3",null,{"children":["$","footer",null,{"className":"relative z-10 border-t border-white/10 bg-black/40 backdrop-blur-md","children":["$","div",null,{"className":"max-w-7xl mx-auto px-6 py-12","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-4","children":[["$","div",null,{"className":"md:col-span-1","children":[["$","$L8",null,{"href":"/","className":"flex items-center gap-2 mb-4","children":[["$","div",null,{"className":"relative w-9 h-9","children":["$","$L9",null,{"src":"/hue-logic-logo.webp","alt":"Hue & Logic Creative Labs","fill":true,"className":"object-contain"}]}],["$","span",null,{"className":"text-lg font-bold gradient-text","children":"Hue & Logic"}]]}],["$","p",null,{"className":"text-white/60 text-sm leading-relaxed mb-4","children":"We bridge art, engineering, and security, and treat the glitch as signal."}],["$","div",null,{"className":"flex items-center gap-4 text-white/60","children":[["$","a",null,{"href":"mailto:contact@hueandlogic.com","aria-label":"Email","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail w-5 h-5","children":[["$","rect","18n3k1",{"width":"20","height":"16","x":"2","y":"4","rx":"2"}],["$","path","1ocrg3",{"d":"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"}],"$undefined"]}]}],["$","a",null,{"href":"https://www.deviantart.com/starwreckintx","target":"_blank","rel":"noopener noreferrer","aria-label":"DeviantArt","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-palette w-5 h-5","children":[["$","circle","1okk4w",{"cx":"13.5","cy":"6.5","r":".5","fill":"currentColor"}],["$","circle","f64h9f",{"cx":"17.5","cy":"10.5","r":".5","fill":"currentColor"}],["$","circle","fotxhn",{"cx":"8.5","cy":"7.5","r":".5","fill":"currentColor"}],["$","circle","qy21gx",{"cx":"6.5","cy":"12.5","r":".5","fill":"currentColor"}],["$","path","12rzf8",{"d":"M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"}],"$undefined"]}]}],"$La","$Lb","$Lc","$Ld"]}]]}],"$Le","$Lf","$L10"]}],"$L11"]}]}]}],false]}]}]}]]}],{"children":["articles","$L12",{"children":[["slug","swarm-response-sop","d"],"$L13",{"children":["__PAGE__","$L14",{},null,false]},null,false]},null,false]},null,false],"$L15",false]],"m":"$undefined","G":["$16",[]],"s":false,"S":true}
+18:I[9425,[],"OutletBoundary"]
+1a:I[2956,[],"AsyncMetadataOutlet"]
+1c:I[9425,[],"ViewportBoundary"]
+1e:I[9425,[],"MetadataBoundary"]
+1f:"$Sreact.suspense"
+a:["$","a",null,{"href":"https://github.com/starwreckntx","target":"_blank","rel":"noopener noreferrer","aria-label":"GitHub","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github w-5 h-5","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}]
+b:["$","a",null,{"href":"https://www.linkedin.com/in/starwreckntx","target":"_blank","rel":"noopener noreferrer","aria-label":"LinkedIn","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-linkedin w-5 h-5","children":[["$","path","c2jq9f",{"d":"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"}],["$","rect","mk3on5",{"width":"4","height":"12","x":"2","y":"9"}],["$","circle","bt5ra8",{"cx":"4","cy":"4","r":"2"}],"$undefined"]}]}]
+c:["$","a",null,{"href":"https://www.tiktok.com/@starwreckntx","target":"_blank","rel":"noopener noreferrer","aria-label":"TikTok","className":"hover:text-white smooth-transition","children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","className":"w-5 h-5","aria-hidden":"true","children":["$","path",null,{"d":"M16.5 3c.4 2.3 1.7 3.7 4 4v3a8.4 8.4 0 0 1-4-1.1v6.2a6 6 0 1 1-6-6c.3 0 .6 0 .9.1v3.1a2.9 2.9 0 1 0 2 2.8V3h3.1z"}]}]}]
+d:["$","a",null,{"href":"https://open.spotify.com/show/4tAojNhlFgo8W8VDPyghL8","target":"_blank","rel":"noopener noreferrer","aria-label":"Podcast","className":"hover:text-white smooth-transition","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-music w-5 h-5","children":[["$","path","1jmyc2",{"d":"M9 18V5l12-2v13"}],["$","circle","fqmcym",{"cx":"6","cy":"18","r":"3"}],["$","circle","1hluhg",{"cx":"18","cy":"16","r":"3"}],"$undefined"]}]}]
+e:["$","div",null,{"children":[["$","h3",null,{"className":"text-white font-semibold text-sm mb-4","children":"Explore"}],["$","ul",null,{"className":"space-y-2","children":[["$","li","/services",{"children":["$","$L8",null,{"href":"/services","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Services"}]}],["$","li","/hue",{"children":["$","$L8",null,{"href":"/hue","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Hue"}]}],["$","li","/logic",{"children":["$","$L8",null,{"href":"/logic","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Logic"}]}],["$","li","/synthesis",{"children":["$","$L8",null,{"href":"/synthesis","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Synthesis"}]}],["$","li","/apps",{"children":["$","$L8",null,{"href":"/apps","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"AI Apps"}]}]]}]]}]
+f:["$","div",null,{"children":[["$","h3",null,{"className":"text-white font-semibold text-sm mb-4","children":"More"}],["$","ul",null,{"className":"space-y-2","children":[["$","li","/articles",{"children":["$","$L8",null,{"href":"/articles","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Articles"}]}],["$","li","/research",{"children":["$","$L8",null,{"href":"/research","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Research"}]}],["$","li","/code",{"children":["$","$L8",null,{"href":"/code","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Code Viz"}]}],["$","li","/about",{"children":["$","$L8",null,{"href":"/about","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"About"}]}],["$","li","/contact",{"children":["$","$L8",null,{"href":"/contact","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Contact"}]}]]}]]}]
+10:["$","div",null,{"children":[["$","h3",null,{"className":"text-white font-semibold text-sm mb-4","children":"Get in touch"}],["$","a",null,{"href":"mailto:contact@hueandlogic.com","className":"text-white/60 hover:text-white text-sm smooth-transition block mb-2","children":"contact@hueandlogic.com"}],["$","ul",null,{"className":"space-y-2 mt-4","children":[["$","li","/privacy",{"children":["$","$L8",null,{"href":"/privacy","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Privacy"}]}],["$","li","/terms",{"children":["$","$L8",null,{"href":"/terms","className":"text-white/60 hover:text-white text-sm smooth-transition","children":"Terms"}]}]]}]]}]
+11:["$","div",null,{"className":"mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3","children":[["$","p",null,{"className":"text-white/50 text-xs","children":["© ",2026," ","Hue & Logic Creative Labs, LLC",". All rights reserved."]}],["$","p",null,{"className":"text-white/40 text-xs font-mono","children":"A creative-AI lab building glitchware — where emergence speaks from the hallucination."}]]}]
+12:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+13:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+14:["$","$1","c",{"children":["$L17",null,["$","$L18",null,{"children":["$L19",["$","$L1a",null,{"promise":"$@1b"}]]}]]}]
+15:["$","$1","h",{"children":[null,[["$","$L1c",null,{"children":"$L1d"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L1e",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1f",null,{"fallback":null,"children":"$L20"}]}]}]]}]
+21:I[4910,["4277","static/chunks/4277-72bf7121d65061b0.js","1740","static/chunks/1740-5bf1d164e093aba1.js","9904","static/chunks/app/articles/%5Bslug%5D/page-97bf65168852eaae.js"],"default"]
+22:T8a5c,<p><strong>By Joe Byram</strong></p>
+<p>Founder &amp; Principal Operator, <a href="https://www.linkedin.com/company/hue-logic-creative-labs/" target="_blank" rel="noopener noreferrer">Hue &amp; Logic Creative Labs LLC</a></p>
+<p>If you run a small manufacturing shop, a regional service company, or an independent lab, you probably don't have a 24/7 Security Operations Center watching your server logs. You have a business to run.</p>
+<p>Then comes the day your hosting traffic meter pins to the ceiling, your server chokes under heavy automated requests, or your cloud host abruptly shuts your site off. On Vercel, a spend-cap pause shows up as <code>503 DEPLOYMENT_PAUSED</code>; a separate <code>402 DEPLOYMENT_DISABLED</code> ("payment required") means the deployment was disabled, often over billing or account status, and has to be sorted out with the host. An automated "swarm" can burn through a monthly compute budget fast (in a bad case, say, forty minutes; that number is an illustration, not a measurement).</p>
+<p>It happened to my own site: starting around November 8, Vercel answered visits to hueandlogic.com with <code>402 Payment Required</code> / <code>DEPLOYMENT_DISABLED</code>, and while I still haven't confirmed the cause, my Shopify store and email kept working while I cut over to a static copy on GitHub Pages.</p>
+<p>"Swarm" here means heavy automated traffic—AI scrapers, aggressive crawlers, credential stuffers, or runaway scripts—that drives up your hosting usage or knocks your server over.</p>
+<p>When you don't have an IT department, your goal isn't to play cat-and-mouse with hackers all afternoon. Your goal is <strong>blast-radius containment</strong>:</p>
+<ol>
+<li><strong>Contain the financial and compute blast radius</strong> so a traffic spike doesn't turn into a four-figure cloud bill or a locked vendor account.</li>
+<li><strong>Contain the operational blast radius</strong> so fixing or moving your website doesn't accidentally kill your company email, invoicing, or storefront.</li>
+<li><strong>Contain the human (and AI) blast radius</strong> so nobody panic-edits DNS records or blocks the webhooks your business actually relies on.</li>
+</ol>
+<p>This Standard Operating Procedure (SOP) is built to be printed, taped inside a binder, and run step-by-step whether the overload is caused by an AI bot swarm, a traffic spike, or a sudden host billing cutoff.</p>
+<hr>
+<h2>THE QUICK CARD (PRINT &amp; FILL OUT BEFORE AN OUTAGE)</h2>
+<p>▶ Watch the short video intro: <a href="https://youtu.be/gqh7WcLaP9Y" target="_blank" rel="noopener noreferrer">DNS Blast Door: Protect Email First</a></p>
+<ul>
+<li><strong>Incident Owner (ONLY person who approves DNS cutover or rollback):</strong> <code>____________________</code></li>
+<li><strong>Backup Contact:</strong> <code>____________________</code></li>
+<li><strong>Host / DNS Registrar / CDN or WAF:</strong> <code>____________ / ____________ / ____________</code></li>
+<li><strong>Static Fallback Location (pre-built plain-file copy):</strong> <code>____________________</code></li>
+<li><strong>Rollback Record Location (saved DNS values + date):</strong> <code>____________________</code></li>
+<li><strong>THE DNS BLAST DOOR (DO NOT TOUCH):</strong> <code>MX</code> (email) · Store records (e.g., Shopify) · <code>TXT</code> for <code>SPF / DKIM / DMARC</code> · Domain-verification <code>TXT</code> records · Other critical records: <code>____________________</code></li>
+</ul>
+<h3>The 8-Step Containment Loop</h3>
+<ol>
+<li><strong>Detect:</strong> Usage alert, spend alert, or server error? Note the exact time (with time zone) and error text. <code>Done: ☐</code></li>
+<li><strong>Fingerprint:</strong> Pull top IPs, ASNs, user agents, JA4 digests, and paths for the spike window. Group by <strong>fingerprint</strong>, not by single IP. <code>Done: ☐</code></li>
+<li><strong>Contain:</strong> Turn on bot challenge mode, rate-limit <code>/api/*</code>, block the bad fingerprint, and disable expensive server routes. <code>Done: ☐</code></li>
+<li><strong>Decide:</strong> Check the Blast-Radius Severity Matrix (Phase 4). The Owner makes the call. <code>Done: ☐</code></li>
+<li><strong>Cut Over:</strong> <em>Only if the Owner explicitly approves.</em> Repoint <strong>only</strong> the website records (<code>A</code> / <code>CNAME</code>) to your static fallback. Watch for the HSTS / certificate gap. <code>Done: ☐</code></li>
+<li><strong>Verify:</strong> A second person or second AI model audits the result with the Owner's <strong>Standing Rulings</strong> in hand. <code>Done: ☐</code></li>
+<li><strong>Roll Back:</strong> Once the main host is healthy and verified on a preview URL, restore the saved DNS values. <code>Done: ☐</code></li>
+<li><strong>Write It Up:</strong> Save the logs, timeline, and lessons learned before closing the ticket. <code>Done: ☐</code></li>
+</ol>
+<blockquote>
+<p><strong>Critical Warning on HSTS:</strong> If your domain uses HTTP Strict Transport Security (HSTS), browsers that have already seen your HSTS header (or every browser, if your domain is on the HSTS preload list) <strong>will not</strong> let visitors click past a certificate warning. During a DNS cutover, expect a hard block until the fallback host finishes issuing a fresh TLS certificate.</p>
+</blockquote>
+<hr>
+<h2>START TRIAGE WITH AN AI ASSISTANT</h2>
+<p>▶ Watch the short video intro: <a href="https://youtu.be/-4z3epkFOb4" target="_blank" rel="noopener noreferrer">2 AM Triage with an AI Assistant</a></p>
+<p>Paste the prompt below into ChatGPT, Claude, Gemini, or Grok, fill in the INCIDENT block, and paste a short excerpt of your logs under it. The assistant follows this SOP's phases, tells you how serious things are, and suggests the cheapest step you can undo. It only advises. You (the Incident Owner) make every change yourself. <strong>Before you paste, redact secrets:</strong> logs can hold API keys, session tokens, cookies, and customer emails. A small sample (50–500 rows from the spike window) is enough.</p>
+<pre><code class="language-text">ROLE: You are an incident triage assistant for a small business with no IT department. Follow the &quot;Blast-Radius Containment SOP&quot; phases: Detect, Fingerprint, Contain, Decide (S1-S4), Cut Over, Verify, Roll Back, Write Up. You advise; the human Incident Owner decides and makes every change.
+
+FIRST: If the INCIDENT block or logs are empty, ask for them and stop.
+
+INCIDENT
+- Time noticed + timezone:
+- Host / CDN or WAF:
+- Error code or alert text (exact):
+- Spend or usage vs cap (e.g. $140 of $200):
+- What changed recently (deploys, DNS, plugins, campaigns):
+- DNS provider:
+- Do-not-touch records (MX, SPF, DKIM, DMARC, verification TXT, store records, others):
+- Standing Rulings (bots/webhooks we WANT, bots we block, features intentionally off):
+LOGS (CSV or JSON excerpt, secrets redacted):
+[paste here]
+
+METHOD
+1. Group requests by JA4 + User-Agent + path pattern. No JA4 in my logs (common on Cloudflare below Enterprise Bot Management)? Use ASN + User-Agent + path and say so. For each group count requests and distinct IPs. Never judge by a single IP.
+2. Classify each top group: Wanted (on my Standing Rulings; a claimed webhook should come from the provider's published IPs), Verified-Unwanted, Spoofed (claims a known bot but fails verification or has a TLS/UA mismatch), or Unknown. Say how each bot claim should be verified (Google: reverse + forward DNS to googlebot.com/google.com/googleusercontent.com; OpenAI: its published IP JSON lists).
+3. Assign severity: S1 Watch (above baseline, site up, spend low) / S2 Throttle (sustained, spend climbing) / S3 Shield (blocks not holding or spend near cap) / S4 Cut Over (host down with 503 DEPLOYMENT_PAUSED / 402 DEPLOYMENT_DISABLED, or unaffordable to stay up).
+4. Propose the cheapest, most reversible step first: log mode, then challenge, rate-limit /api/*, block the fingerprint, then Attack/Under Attack mode. Cut over to the static fallback only at S4. Warn me that Attack/Under Attack mode and Cloudflare Bot Fight Mode can block standalone APIs and unrecognized automation, and that Vercel Bot Protection doesn't work if Cloudflare proxies the site.
+
+HARD RULES
+- Never recommend changing MX, SPF, DKIM, DMARC, or verification TXT records.
+- Never tell me to change DNS or cut over without the Owner's explicit sign-off. Mark it &quot;OWNER SIGN-OFF REQUIRED&quot;.
+- Never block anything on my Wanted list.
+- Do not invent log values or counts. Use only what I pasted, and say when the sample is too small.
+- Root cause is &quot;Unconfirmed&quot; unless the logs prove it.
+- If you see secrets in my paste, tell me to rotate them.
+
+OUTPUT (use these headings, in this order)
+1. Summary (2-3 sentences)
+2. Severity: S? + why
+3. Top fingerprints (table: JA4 or ASN | UA | path | requests | distinct IPs | class)
+4. Next 1-3 actions, in order (each: what, where, how to undo)
+5. What NOT to do
+6. Data still needed (be specific)
+7. Incident log entry (timestamp with timezone | observation | action proposed | owner decision: PENDING)
+</code></pre>
+<p><strong>Example data to test it</strong> (synthetic: documentation IP ranges and made-up fingerprints, not a real incident):</p>
+<pre><code class="language-text">ts_utc,ip,asn,country,user_agent,ja4,method,path,status,bytes,cache,verified_bot
+2026-01-15T08:02:11Z,203.0.113.14,AS64500 ExampleCloud,US,&quot;Mozilla/5.0 (Windows NT 10.0) Chrome/130&quot;,t13d1812h1_aaaa00000001_bbbb00000001,POST,/api/quote,200,512,MISS,false
+2026-01-15T08:02:11Z,203.0.113.77,AS64500 ExampleCloud,US,&quot;Mozilla/5.0 (Windows NT 10.0) Chrome/130&quot;,t13d1812h1_aaaa00000001_bbbb00000001,POST,/api/quote,200,512,MISS,false
+2026-01-15T08:02:12Z,198.51.100.9,AS64501 ExampleResi,BR,&quot;Mozilla/5.0 (Windows NT 10.0) Chrome/130&quot;,t13d1812h1_aaaa00000001_bbbb00000001,POST,/api/quote,200,512,MISS,false
+2026-01-15T08:02:12Z,198.51.100.201,AS64501 ExampleResi,VN,&quot;Mozilla/5.0 (Windows NT 10.0) Chrome/130&quot;,t13d1812h1_aaaa00000001_bbbb00000001,POST,/api/quote,200,512,MISS,false
+2026-01-15T08:02:13Z,192.0.2.50,AS64502 ExampleHost,NL,&quot;Mozilla/5.0 (compatible; Googlebot/2.1)&quot;,t13d1812h1_aaaa00000001_bbbb00000001,GET,/sitemap-3.xml,200,9100,MISS,false
+2026-01-15T08:02:15Z,192.0.2.88,AS64503 ExamplePay,US,&quot;Stripe/1.0 (+https://stripe.com/docs/webhooks)&quot;,t13d0000h1_cccc00000002_dddd00000002,POST,/api/stripe-webhook,200,64,MISS,false
+2026-01-15T08:02:16Z,198.51.100.33,AS64504 ExampleISP,US,&quot;Mozilla/5.0 (Macintosh) Safari/17&quot;,t13d1516h2_eeee00000003_ffff00000003,GET,/contact,200,18000,HIT,false
+</code></pre>
+<p>Example INCIDENT values to go with it: 2:02 AM Central (UTC-6), Vercel Pro, spend alert "75% of $200 reached", nothing deployed this week, DNS at Cloudflare (DNS only), do-not-touch MX/SPF/DKIM/DMARC/Shopify, Wanted: Googlebot (verified), Stripe webhooks, UptimeRobot.</p>
+<hr>
+<h2>PHASE 0: BUILD YOUR BULKHEADS (DO THIS ON A QUIET DAY)</h2>
+<p>Blast-radius containment happens <em>before</em> the server catches fire. Take one quiet afternoon to set up your bulkheads:</p>
+<ul>
+<li><strong>0.1 Baseline normal traffic:</strong> Write down your typical daily requests, bandwidth, serverless function invocations, and top user agents and countries. On Vercel, <a href="https://vercel.com/docs/vercel-firewall/firewall-observability" target="_blank" rel="noopener noreferrer">Firewall Observability</a> and the <a href="https://vercel.com/docs/cli/firewall" target="_blank" rel="noopener noreferrer">vercel firewall CLI</a> group traffic by IP, JA4, ASN, user agent, path, bot, and country. Without a written baseline, you can't tell a swarm from a Tuesday.</li>
+<li><strong>0.2 Set hard spend caps and usage alerts:</strong><ul>
+<li><strong>Vercel (Pro and Enterprise):</strong> <a href="https://vercel.com/docs/spend-management" target="_blank" rel="noopener noreferrer">Spend Management</a> sends alerts at 50%, 75%, and 100% of your spend amount and can trigger webhooks. Setting an amount alone doesn't stop usage: to cap it, switch on the opt-in <strong>Pause Production Deployments</strong> option, and know that it pauses production for <strong>every project on the team</strong>, not just the one under load. Because spend is checked every few minutes, the pause can land several minutes after you cross the line, so set your amount below your true ceiling. <a href="https://vercel.com/kb/guide/why-is-my-account-deployment-blocked" target="_blank" rel="noopener noreferrer">Paused projects</a> return <code>503 DEPLOYMENT_PAUSED</code>, must be resumed one at a time, and don't resume just because you raise the spend amount. Vercel's Hobby plan has no Spend Management and is for non-commercial use only, so a business site belongs on Pro.</li>
+<li><strong>GitHub Pages:</strong> Operates with a soft bandwidth limit of 100 GB/month per <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits" target="_blank" rel="noopener noreferrer">GitHub Pages limits</a>. It isn't usage-billed, so you won't get a surprise invoice, but a sustained swarm can still trigger throttling or support intervention. The same page also says Pages isn't meant to be used as free hosting to run an online business or e-commerce site, so at most treat it as a short-term outage contact page, not your shop's long-term home.</li>
+<li><strong>Any Host:</strong> Set alerts well below the threshold where your provider cuts off service or drains your operating account.</li>
+</ul>
+</li>
+<li><strong>0.3 Build a static "lifeboat" fallback now:</strong> Export your key site pages as plain static HTML/CSS/assets. Strip every server-side dependency: <code>/api/*</code> routes, logins, dynamic forms, chat widgets, and database calls. Run a secret scan on the static build before pushing it anywhere public, and host it on infrastructure completely independent of your primary server, such as Cloudflare Pages, Netlify, or Amazon S3 + CloudFront. (GitHub Pages works technically, but see the terms caveat in 0.2.)</li>
+<li><strong>0.4 Decide what you can live without:</strong> List every dynamic feature your static fallback drops, and make sure the static pages clearly display how customers can reach your shop right now (phone number, direct email, physical address).</li>
+<li><strong>0.5 Mark your "Do-Not-Touch" DNS Blast Doors:</strong> Export your full DNS zone file today. Highlight <code>MX</code> (email), store sub-records, <code>SPF</code>, <code>DKIM</code>, <code>DMARC</code>, and verification <code>TXT</code> records (including any <code>_github-pages-challenge</code> record from 0.9). <strong>Those never move during a website outage.</strong> Losing your website for an hour is an annoyance; breaking your shop's email and invoicing during an outage is a self-inflicted disaster.</li>
+<li><strong>0.6 Check for HSTS:</strong> Inspect your site's response headers for <code>Strict-Transport-Security</code> or check if your domain is HSTS-preloaded. Under <a href="https://www.rfc-editor.org/rfc/rfc6797.html" target="_blank" rel="noopener noreferrer">IETF RFC 6797</a>, browsers that have already seen your HSTS header (or any browser, if your domain is preloaded) must refuse the connection when the certificate isn't valid—those visitors cannot click "proceed anyway." First-time visitors without a cached policy get an ordinary, bypassable warning.</li>
+<li><strong>0.7 Check CAA records:</strong> If your DNS uses Certificate Authority Authorization (<code>CAA</code>) records, verify they permit the certificate authority used by your fallback host (for example, GitHub Pages uses Let's Encrypt, so a <code>CAA</code> record must allow <a href="https://letsencrypt.org" target="_blank" rel="noopener noreferrer">letsencrypt.org</a>).</li>
+<li><strong>0.8 Save a Rollback Record:</strong> Copy the exact current values and TTLs of your website DNS records (<code>@</code> / <code>A</code> / <code>AAAA</code> / <code>www</code> <code>CNAME</code>) with a timestamp. Rolling back should be a copy-paste operation, not a guessing game.</li>
+<li><strong>0.9 Pre-verify your domain on the fallback host:</strong> Where supported (like <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages" target="_blank" rel="noopener noreferrer">GitHub Pages domain verification</a>, which adds a <code>_github-pages-challenge</code> <code>TXT</code> record), verify ownership now so another account cannot claim your domain while DNS is in motion.</li>
+<li><strong>0.10 Write your Standing Rulings:</strong> Document which automated traffic your business actually needs (search indexers, uptime monitors, Stripe/payment webhooks), which bots you block on sight, and which features are intentionally omitted from the fallback site. Every human or AI reviewer gets this sheet before touching the incident.</li>
+</ul>
+<hr>
+<h2>PHASE 1: DETECT THE OVERLOAD</h2>
+<ul>
+<li><strong>1.1 Treat any of the following as an active containment trigger:</strong><ul>
+<li>A spend or quota alert firing at 50% or 75%.</li>
+<li>Serverless function invocations, CPU, or bandwidth spiking to <strong>2× or 3× your Phase 0 baseline</strong> with zero matching increase in customer calls, orders, or leads.</li>
+<li>An automated firewall alert (for example, Vercel alerts when DDoS mitigation detects 125,000 malicious requests within 15 minutes).</li>
+<li>Your site returning a hard host cutoff error such as <code>503 DEPLOYMENT_PAUSED</code> (a spend-cap pause) or <a href="https://vercel.com/docs/errors/deployment_disabled" target="_blank" rel="noopener noreferrer">402 DEPLOYMENT_DISABLED</a> (payment required / deployment disabled, which you fix with the host's billing or support).</li>
+</ul>
+</li>
+<li><strong>1.2 Start the incident log:</strong> Record the exact timestamp (with time zone), the exact error code, and take a screenshot before changing any settings.</li>
+</ul>
+<hr>
+<h2>PHASE 2: TRIAGE &amp; FINGERPRINT (HUNT THE SWARM, NOT SINGLE IPs)</h2>
+<p>Many scraper and agent swarms rotate through thousands of residential proxy IPs. Blocking individual IP addresses by hand rarely works against rotating proxies. Instead, hunt the <strong>fingerprint</strong>.</p>
+<ul>
+<li><strong>2.1 Pull the spike window:</strong> Export firewall and access logs from just prior to the spike through the present minute.</li>
+<li><strong>2.2 Extract key fields:</strong> Timestamp · Client IP · ASN / Network Name · Country · User Agent · <a href="https://developers.cloudflare.com/bots/additional-configurations/ja3-ja4-fingerprint/" target="_blank" rel="noopener noreferrer">JA4 (or JA3) TLS fingerprint</a> (<a href="https://github.com/FoxIO-LLC/ja4/blob/main/technical_details/README.md" target="_blank" rel="noopener noreferrer">FoxIO JA4+ spec</a>) · HTTP Method · Path · Status Code · Response Size · Cache Hit/Miss · Verified-Bot Flag.<ul>
+<li><strong>JA4 availability:</strong> Vercel exposes JA4 digests on all plans. On Cloudflare, JA3/JA4 fingerprints are only available to Enterprise customers who have purchased Bot Management, so most small shops on Cloudflare Free or Pro won't see them. No JA4 in your logs? Group by <code>ASN + User Agent + Path Pattern</code> instead.</li>
+</ul>
+</li>
+<li><strong>2.3 Group by Fingerprint, not IP:</strong> Aggregate your logs by <code>JA4 digest + User Agent + Path Pattern</code> (or <code>ASN + User Agent + Path Pattern</code> without JA4), counting total requests and distinct IPs. <strong>For example (an illustrative number), a single row showing 4,000 distinct IPs sharing one JA4 TLS fingerprint hammering the same route is almost certainly your swarm.</strong></li>
+<li><strong>2.4 Audit the top groups against these tells:</strong><ul>
+<li><strong>Spoofed identity:</strong> Does it claim to be Googlebot or OpenAI? Verify it. For Google, run a reverse DNS lookup (<code>googlebot.com</code>, <code>google.com</code>, or <code>googleusercontent.com</code>) and forward-confirm back to the IP per <a href="https://developers.google.com/crawling/docs/crawlers-fetchers/verify-google-requests" target="_blank" rel="noopener noreferrer">Google's verification guide</a>. For OpenAI, check against <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener noreferrer">OpenAI's published crawler JSON lists</a> (<code>GPTBot</code>, <code>OAI-SearchBot</code>, <code>ChatGPT-User</code>). On Cloudflare, check cryptographic signatures via <a href="https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/" target="_blank" rel="noopener noreferrer">Web Bot Auth</a>.</li>
+<li><strong>TLS mismatch:</strong> A User-Agent header claiming to be desktop Chrome paired with a Python/Go/headless JA4 TLS fingerprint is a strong spoofing signal. (Corporate proxies and TLS-inspecting middleboxes can also change the TLS fingerprint, so confirm with the other tells.)</li>
+<li><strong>Origin &amp; Cadence:</strong> Heavy concentration in cloud datacenter ASNs, or residential proxies firing at machine-regular intervals without fetching CSS, JS, or images.</li>
+<li><strong>Path abuse:</strong> Non-stop <code>/api/*</code> hits, sequential sitemap scraping, or ignoring <code>robots.txt</code>.</li>
+</ul>
+</li>
+<li><strong>2.5 Classify before blocking:</strong> Tag each high-volume group as <strong>Wanted</strong> (on your Standing Rulings list), <strong>Verified-Unwanted</strong>, <strong>Spoofed/Unverified Bot</strong>, or <strong>Unknown</strong>. Never drop a blanket block without checking your Wanted list first.</li>
+</ul>
+<hr>
+<h2>PHASE 3: CONTAIN THE BLAST RADIUS (CHEAPEST, MOST REVERSIBLE FIRST)</h2>
+<p>Apply friction in layers—from least disruptive to total lockdown—until compute consumption drops back to baseline:</p>
+<ul>
+<li><strong>3.1 Enable Bot Protection (Log first, then Challenge):</strong><ul>
+<li><strong>Vercel:</strong> Enable the <a href="https://vercel.com/docs/bot-management" target="_blank" rel="noopener noreferrer">Bot Management</a> / <a href="https://vercel.com/docs/vercel-firewall/vercel-waf/managed-rulesets" target="_blank" rel="noopener noreferrer">WAF Managed Rulesets</a> in Log mode to verify no false positives, then switch to Challenge mode (serves a JS challenge to non-browsers while exempting verified bots). <em>Watch out:</em> Vercel's Bot Protection doesn't work when a reverse proxy such as Cloudflare sits in front of your Vercel deployment. If Cloudflare proxies your Vercel site, choose one edge to enforce at.</li>
+<li><strong>Cloudflare:</strong> Enable <a href="https://developers.cloudflare.com/bots/get-started/bot-fight-mode/" target="_blank" rel="noopener noreferrer">Bot Fight Mode</a>. <em>Watch out:</em> Bot Fight Mode cannot be skipped with WAF custom rules or Page Rules on any plan, and it may challenge legitimate API, mobile-app, or third-party integration traffic that hits your domain.</li>
+</ul>
+</li>
+<li><strong>3.2 Rate-limit expensive routes (<code>/api/*</code>):</strong><ul>
+<li><strong>Vercel:</strong> Use <a href="https://vercel.com/docs/vercel-firewall/vercel-waf/rate-limiting" target="_blank" rel="noopener noreferrer">WAF Rate Limiting</a> (available on all plans, keyable by IP or <strong>JA4 digest</strong>) targeting <code>/api/*</code> and server-rendered routes. Hobby allows only one rule and is for non-commercial use, so a business site should be on Pro.</li>
+<li><strong>Cloudflare:</strong> Configure <a href="https://developers.cloudflare.com/waf/rate-limiting-rules/" target="_blank" rel="noopener noreferrer">Rate limiting rules</a> on dynamic endpoints (JA4 matching needs Enterprise Bot Management; otherwise use IP, ASN, user agent, and path).</li>
+</ul>
+</li>
+<li><strong>3.3 Block the offending fingerprint:</strong> Write a targeted WAF rule matching the exact JA4 digest (where your plan exposes it), ASN, user-agent string, or path pattern identified in Phase 2.</li>
+<li><strong>3.4 Trigger Emergency Shielding if the spike continues:</strong><ul>
+<li><strong>Vercel:</strong> Turn on <a href="https://vercel.com/docs/vercel-firewall/attack-mode" target="_blank" rel="noopener noreferrer">Attack Mode</a> for 1, 6, or 24 hours. It challenges all browser visitors, permits known verified bots, and blocked requests do not count toward your usage bill. <em>(Note: Vercel says Attack Mode doesn't affect search indexing or webhooks, but standalone APIs, other backend frameworks, and automated services it doesn't recognize can be blocked while it's on.)</em></li>
+<li><strong>Cloudflare:</strong> Enable <a href="https://developers.cloudflare.com/fundamentals/reference/under-attack-mode/" target="_blank" rel="noopener noreferrer">Under Attack mode</a> to place an interstitial check in front of all visitors.</li>
+</ul>
+</li>
+<li><strong>3.5 Enforce AI Crawler rules at the firewall:</strong><ul>
+<li>Remember that <a href="https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/" target="_blank" rel="noopener noreferrer">managed robots.txt settings</a> are polite requests, not blast doors. Unscrupulous scrapers—and some user-triggered agents—ignore them.</li>
+<li>Enforce blocks at the WAF layer using <a href="https://developers.cloudflare.com/bots/additional-configurations/block-ai-bots/" target="_blank" rel="noopener noreferrer">Cloudflare AI Crawler and Agent access policies</a> or custom User-Agent/ASN rules (JA4 rules on Cloudflare need Enterprise Bot Management).</li>
+</ul>
+</li>
+<li><strong>3.6 Shed non-essential load:</strong> Disable the expensive dynamic routes identified on your Phase 0.4 list, and verify your Phase 0.2 spend pause is switched on (where your host offers one) so an uncontained surge pauses the server rather than draining the card on file.</li>
+</ul>
+<hr>
+<h2>PHASE 4: DECIDE (THE BLAST-RADIUS SEVERITY MATRIX)</h2>
+<p>Only the designated <strong>Incident Owner</strong> approves moving from one containment ring to the next. No contractor, employee, or automated AI agent alters DNS without explicit human sign-off.</p>
+<h3>Level S1 — Watch</h3>
+<ul>
+<li><strong>What you see:</strong> Traffic above baseline; site responsive; spend well below cap.</li>
+<li><strong>Containment Action:</strong> Enable WAF Log mode, capture fingerprints (JA4 where available, otherwise ASN + user agent + path), monitor closely.</li>
+<li><strong>Approval:</strong> Owner informed.</li>
+</ul>
+<h3>Level S2 — Throttle</h3>
+<ul>
+<li><strong>What you see:</strong> Sustained traffic spike; usage/spend climbing steadily toward cap; site still up.</li>
+<li><strong>Containment Action:</strong> Enforce <code>/api/*</code> rate limits, enable Bot Challenge, block the swarm's fingerprint (JA4, or ASN + user agent + path).</li>
+<li><strong>Approval:</strong> Owner approves.</li>
+</ul>
+<h3>Level S3 — Shield</h3>
+<ul>
+<li><strong>What you see:</strong> Rate limits and fingerprint blocks aren't holding, or spend is dangerously close to your cutoff cap.</li>
+<li><strong>Containment Action:</strong> Engage Attack / Under Attack Mode, disable non-essential dynamic routes, verify hard spend pause is active.</li>
+<li><strong>Approval:</strong> Owner approves.</li>
+</ul>
+<h3>Level S4 — Cut Over (Full Isolation)</h3>
+<ul>
+<li><strong>What you see:</strong> Primary server is down (<code>503</code> / <code>402</code> host cutoff) or keeping it online is financially unsustainable.</li>
+<li><strong>Containment Action:</strong> Execute Phase 5 DNS Cutover to the independent static fallback.</li>
+<li><strong>Approval:</strong> <strong>Owner ONLY, explicit sign-off required.</strong></li>
+</ul>
+<hr>
+<h2>PHASE 5: CUT OVER TO THE STATIC FALLBACK</h2>
+<p>▶ Watch the short video intro: <a href="https://youtu.be/dhDXGuqYh6U" target="_blank" rel="noopener noreferrer">Cutover and the Certificate Gap</a></p>
+<p>When the primary server is dead or paused, you pivot visitors to your static lifeboat without touching the rest of your company's infrastructure.</p>
+<ul>
+<li><strong>5.1 Pre-flight check:</strong> Confirm the static fallback build is clean, live on its fallback URL, and your Rollback Record (0.8) is saved.</li>
+<li><strong>5.2 Move ONLY the web records:</strong> At your DNS registrar, update <strong>only</strong> the apex <code>A</code>/<code>AAAA</code> records and the <code>www</code> <code>CNAME</code> record (for example, on GitHub Pages, pointing apex <code>A</code> records to its published IPs and <code>www</code> to <code>&lt;your-org&gt;.github.io</code>; other fallback hosts publish their own values). <strong>Do not touch a single record on your 0.5 Do-Not-Touch list (<code>MX</code>, <code>SPF</code>, <code>DKIM</code>, <code>DMARC</code>, store records).</strong></li>
+<li><strong>5.3 Bind the custom domain on the fallback host:</strong> Set your custom domain in the fallback host's settings. Per <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages" target="_blank" rel="noopener noreferrer">Troubleshooting custom domains and GitHub Pages</a>, GitHub Pages can take up to an hour to issue a certificate after you configure your custom domain.</li>
+<li><strong>5.4 Navigate the HSTS / Certificate Gap:</strong><ul>
+<li>Until the fallback host finishes issuing its TLS certificate, browsers that have cached an HSTS policy for your domain (or every browser, if it's preloaded) will show a hard error with no bypass button.</li>
+<li>If certificate issuance stalls while old DNS TTLs expire, see <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages" target="_blank" rel="noopener noreferrer">Troubleshooting custom domains and GitHub Pages</a>: once DNS settles, removing and re-saving the custom domain re-triggers the Let's Encrypt challenge.</li>
+<li>As soon as the certificate issues, check <strong>Enforce HTTPS</strong> (see <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https" target="_blank" rel="noopener noreferrer">Securing your GitHub Pages site with HTTPS</a>).</li>
+</ul>
+</li>
+<li><strong>5.5 Smoke test:</strong> Verify that the homepage, core service pages, contact details, and <code>apex ↔ www</code> redirects resolve cleanly over HTTPS.</li>
+</ul>
+<hr>
+<h2>PHASE 6: INDEPENDENT VERIFICATION (SECOND PAIR OF EYES)</h2>
+<p>When you're containing an outage under stress, tunnel vision is your biggest risk.</p>
+<ul>
+<li><strong>6.1 Run an independent audit:</strong> Have a second person—or an independent AI verification agent—check your live DNS records, HTTPS certificate status, page rendering, and broken links against the original site.</li>
+<li><strong>6.2 Hand the auditor your Standing Rulings (0.10):</strong> Never let a reviewer audit blind. Without your Standing Rulings, a helpful human or AI will flag your intentionally stripped <code>/api/*</code> routes or forms as "broken" and try to restore the exact dynamic endpoints that caused the overload.</li>
+<li><strong>6.3 Single-step remediation:</strong> The reviewer reports findings; the Owner decides what changes. Execute any adjustment as a single, isolated, revertible step.</li>
+</ul>
+<hr>
+<h2>PHASE 7: RECOVER &amp; ROLL BACK</h2>
+<ul>
+<li><strong>7.1 Fix the root cause in isolation:</strong> While your static fallback calmly serves your business card and phone number to customers, resolve the billing cap, quota limit, or runaway route on your primary host—and keep your Phase 3 WAF fingerprint blocks and rate limits turned on.</li>
+<li><strong>7.2 Test on the preview URL:</strong> Verify the primary site is healthy and hardened using the host's internal preview/staging URL before touching public DNS.</li>
+<li><strong>7.3 Restore DNS from the Rollback Record:</strong> With Owner approval, restore the exact <code>A</code> and <code>CNAME</code> values saved in Phase 0.8. Leave your static fallback repo built and parked for the next incident.</li>
+<li><strong>7.4 Verify the return trip:</strong> Watch for any reverse TLS/caching lag, then confirm live HTTPS, forms, and webhooks are operating normally.</li>
+</ul>
+<hr>
+<h2>PHASE 8: POST-INCIDENT HARDENING</h2>
+<ul>
+<li><strong>8.1 Preserve the evidence:</strong> Archive the alert emails, screenshots, spike-window log exports, the JA4 fingerprint table, the WAF rules deployed, and the before/after DNS snapshots.</li>
+<li><strong>8.2 Write a one-page timeline:</strong> Log every action with explicit time zones.</li>
+<li><strong>8.3 Separate proof from guesswork:</strong> Only record a root cause if your logs prove it. If the logs don't show why the spike started, record the cause as <em>"Unconfirmed"</em> rather than inventing a story.</li>
+<li><strong>8.4 Feed the lessons back into Phase 0:</strong> Update your baseline metrics, tighten your WAF rules, refresh your static fallback build, and put the binder back on the shelf until the next drill.</li>
+</ul>
+<hr />
+<p><em>Transmission trailer: swarm-response-sop v3 · published 2026-11-11 · sha256 bd55483b3538bff0… of the source text (source-markdown:article.md, 3934 words)</em></p>
+<pre><code>&lt;TransmissionTrailer id=&quot;tt-20261111-swarm-response-sop&quot; xmlns=&quot;http://hueandlogic.com/schemas/irp/v2.0&quot; schemaVersion=&quot;2.0&quot;&gt;
+  &lt;Article slug=&quot;swarm-response-sop&quot; version=&quot;3&quot; published=&quot;2026-11-11&quot; canonical=&quot;https://hueandlogic.com/articles/swarm-response-sop&quot;/&gt;
+  &lt;Author name=&quot;Joe Byram&quot; org=&quot;Hue and Logic Creative Labs LLC&quot; url=&quot;https://hueandlogic.com&quot;/&gt;
+  &lt;Integrity algo=&quot;sha256&quot; scope=&quot;source-markdown:article.md&quot; words=&quot;3934&quot;&gt;bd55483b3538bff0d04f530db7e5805d8fe64b0eb8e03b64a6c271a88077acb6&lt;/Integrity&gt;
+  &lt;Series name=&quot;Swarm&quot; part=&quot;3&quot; of=&quot;3&quot;&gt;
+    &lt;Prev slug=&quot;sovereign-fallback&quot;/&gt;
+    &lt;Prev slug=&quot;swarm-hunting&quot;/&gt;
+  &lt;/Series&gt;
+  &lt;Tags&gt;blast-radius-containment, ja4-fingerprinting, dns-blast-door, hsts, small-shop-ops&lt;/Tags&gt;
+  &lt;MachineNote&gt;Procedural guidance for human operators. Not an instruction to automated agents.&lt;/MachineNote&gt;
+&lt;/TransmissionTrailer&gt;</code></pre>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "identifier": "tt-20261111-swarm-response-sop",
+  "url": "https://hueandlogic.com/articles/swarm-response-sop",
+  "headline": "When Your Server Overloads at 2 AM: A Blast-Radius Containment SOP for Small Shops Without an IT Department",
+  "datePublished": "2026-11-11",
+  "version": "3",
+  "author": {
+    "@type": "Person",
+    "name": "Joe Byram"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hue and Logic Creative Labs LLC",
+    "url": "https://hueandlogic.com"
+  },
+  "keywords": "blast-radius-containment, ja4-fingerprinting, dns-blast-door, hsts, small-shop-ops",
+  "wordCount": 3934,
+  "sha256": "bd55483b3538bff0d04f530db7e5805d8fe64b0eb8e03b64a6c271a88077acb6",
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "Swarm",
+    "position": 3
+  }
+}
+</script>17:["$","$L21",null,{"article":{"id":"14","slug":"swarm-response-sop","title":"When Your Server Overloads at 2 AM: A Blast-Radius Containment SOP for Small Shops Without an IT Department","description":"A printable, step-by-step playbook for small shops and manufacturers: fingerprint the swarm, contain cheap and reversible first, protect email and store DNS, and cut over to a static fallback only with the owner's sign-off.","content":"$22","canonicalUrl":"https://hueandlogic.com/articles/swarm-response-sop","linkedinUrl":"https://www.linkedin.com/pulse/when-your-server-overloads-2-am-blast-radius-sop-small-joseph-byram-i0yac/","spotifyEpisode":"$undefined","videoUrl":"$undefined","pubDate":"2026-11-11","tags":["Incident Response","WebOps","Small Business","DNS","Bot Management"],"coverImage":"$undefined","readingTime":"20 min read"}}]
+1d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"}],["$","meta","2",{"name":"theme-color","content":"#8b5cf6"}]]
+19:null
+23:I[1332,[],"IconMark"]
+1b:{"metadata":[["$","title","0",{"children":"When Your Server Overloads at 2 AM: A Blast-Radius Containment SOP for Small Shops Without an IT Department | Hue & Logic | Hue & Logic"}],["$","meta","1",{"name":"description","content":"A printable, step-by-step playbook for small shops and manufacturers: fingerprint the swarm, contain cheap and reversible first, protect email and store DNS, and cut over to a static fallback only with the owner's sign-off."}],["$","meta","2",{"name":"application-name","content":"Hue & Logic Creative Labs"}],["$","link","3",{"rel":"manifest","href":"/manifest.json","crossOrigin":"$undefined"}],["$","meta","4",{"name":"mobile-web-app-capable","content":"yes"}],["$","link","5",{"rel":"canonical","href":"https://hueandlogic.com/articles/swarm-response-sop/"}],["$","meta","6",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","7",{"name":"apple-mobile-web-app-title","content":"Hue & Logic"}],["$","meta","8",{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","meta","9",{"property":"og:title","content":"When Your Server Overloads at 2 AM: A Blast-Radius Containment SOP for Small Shops Without an IT Department"}],["$","meta","10",{"property":"og:description","content":"A printable, step-by-step playbook for small shops and manufacturers: fingerprint the swarm, contain cheap and reversible first, protect email and store DNS, and cut over to a static fallback only with the owner's sign-off."}],["$","meta","11",{"property":"og:url","content":"https://hueandlogic.com/articles/swarm-response-sop/"}],["$","meta","12",{"property":"og:type","content":"article"}],["$","meta","13",{"property":"article:published_time","content":"2026-11-11"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Hue & Logic | Cybersecurity, Web Development & AI Governance in Central Texas"}],["$","meta","16",{"name":"twitter:description","content":"Security hardening, cybersecurity consulting, website development and AI governance for Central Texas businesses. Plus HUE: hand-painted, airbrush and AI-assisted creative work."}],["$","meta","17",{"name":"twitter:image:type","content":"image/png"}],["$","meta","18",{"name":"twitter:image:width","content":"1200"}],["$","meta","19",{"name":"twitter:image:height","content":"630"}],["$","meta","20",{"name":"twitter:image:alt","content":"Hue & Logic Creative Labs: hexagon mark beside a burst of color, hueandlogic.com\n"}],["$","meta","21",{"name":"twitter:image","content":"https://hueandlogic.com/twitter-image.png?c02d26986ef47b83"}],["$","link","22",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","23",{"rel":"icon","href":"/icon.png?3abcd7c6f6ed6435","type":"image/png","sizes":"512x512"}],["$","link","24",{"rel":"apple-touch-icon","href":"/apple-icon.png?428b4add43f26f8d","type":"image/png","sizes":"180x180"}],["$","$L23","25",{}]],"error":null,"digest":"$undefined"}
+20:"$1b:metadata"

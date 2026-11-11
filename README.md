@@ -32,6 +32,22 @@ send to on this copy. That change lives only in the mirror build; the site sourc
 has the form. ARC chat also needs a server and will not answer here. That includes the
 "ARC keeps the door" box at the doors; both doors work without it.
 
+## 2026-11-11: new article "swarm-response-sop"
+
+- Added `/articles/swarm-response-sop/` ("When Your Server Overloads at 2 AM: A
+  Blast-Radius Containment SOP for Small Shops Without an IT Department"), its
+  `/logic/library/text/swarm-response-sop` payload, the LOGIC Library listing entry, and
+  its `sitemap.xml` entry. Nothing else on the site changed.
+- Built from the site source at 60e7683 with the mirror steps below, plus
+  `content/articles/swarm-response-sop.md` (id 14). That article file is not in the site
+  repo yet; add it there before the next full rebuild or the page will drop out.
+- Only new `_next` files were added; no existing `_next` file was changed or removed.
+  Pages from this build and the 2026-11-10 build use different chunk sets, so moving
+  between them is a normal full page load.
+- `/articles` (the listing page) loads its list from `/api/articles`, which this static copy
+  doesn't have, so that listing was already empty before this change and still is. The
+  LOGIC Library (`/logic/library`) lists the article.
+
 ## How this build was made
 
 From the site repo at the commit above:
