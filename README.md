@@ -48,6 +48,21 @@ has the form. ARC chat also needs a server and will not answer here. That includ
   doesn't have, so that listing was already empty before this change and still is. The
   LOGIC Library (`/logic/library`) lists the article.
 
+## 2026-11-15: new article "survives-a-change-of-hands" + 3D explainer
+
+- Added `/articles/survives-a-change-of-hands/` ("Build Your Own Multi-Agent Architecture
+  That Survives a Change of Hands", id 15) and `/explainers/medium-vs-method/` (static
+  three.js explainer of the Nov 13, 2026 ground stop; three.js 0.160.0 vendored, no CDN),
+  plus both `sitemap.xml` entries. Nothing else on the site changed.
+- Built from the site repo at 9f45692 (PR #53) with the mirror steps below. The site repo
+  gave the article id 14, which collides with `swarm-response-sop` here; this build uses
+  id 15, and the site repo gets the same fix.
+- Only new `_next` files were added (28); no existing `_next` file was changed or removed.
+- Not updated: the LOGIC Library listing. A rebuild of that page from the site repo would
+  drop `swarm-response-sop`, whose source is still not in the site repo.
+- Why this copy carries it: Vercel paused deployments for the account on Nov 8, 2026
+  (Hobby fair-use limit, Fluid Provisioned Memory) until Dec 8, 2026.
+
 ## How this build was made
 
 From the site repo at the commit above:

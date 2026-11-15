@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The aircraft were fine. The medium failed. | Hue and Logic</title>
+<meta name="description" content="Interactive 3D explainer: the Nov 13, 2026 nationwide FAA ground stop, step by step, and why you own the method, not the medium.">
+<meta property="og:title" content="The aircraft were fine. The medium failed.">
+<meta property="og:description" content="Step through the Nov 13, 2026 nationwide ground stop in 3D: telecom layer, control centers, aircraft, and the method layer that survives a change of medium.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hueandlogic.com/explainers/medium-vs-method/">
+<meta property="og:image" content="https://hueandlogic.com/explainers/medium-vs-method/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://hueandlogic.com/explainers/medium-vs-method/">
+<style>
+  :root { --bg:#0b0d10; --ink:#e8eaed; --quiet:#9aa0a6; --line:#2a2f36; --amber:#f2a93b; --red:#e5484d; --teal:#2dd4bf; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--ink); font:14px/1.45 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; overflow:hidden; }
+  #stage { position:fixed; inset:0; }
+  header { position:fixed; top:14px; left:16px; right:16px; pointer-events:none; }
+  h1 { margin:0; font-size:18px; font-weight:650; letter-spacing:.01em; }
+  header p { margin:2px 0 0; color:var(--quiet); font-size:12.5px; }
+  #panel { position:fixed; left:16px; right:16px; bottom:14px; background:rgba(11,13,16,.88); border:1px solid var(--line); border-radius:10px; padding:12px 14px; max-width:760px; backdrop-filter: blur(6px); }
+  #steps { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; }
+  #steps button, #play { font:inherit; font-size:12px; color:var(--ink); background:#14181d; border:1px solid var(--line); border-radius:6px; padding:5px 9px; cursor:pointer; }
+  #steps button[aria-current="step"] { border-color:var(--amber); color:var(--amber); }
+  #steps button:focus-visible, #play:focus-visible { outline:2px solid var(--amber); outline-offset:2px; }
+  #when { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:12px; color:var(--amber); }
+  #title { font-size:16px; font-weight:650; margin:2px 0 4px; }
+  #body { margin:0; color:#cfd3d8; }
+  #src { margin-top:6px; font-size:12px; color:var(--quiet); }
+  #src a { color:var(--quiet); }
+  #stats { display:flex; gap:14px; flex-wrap:wrap; margin-top:8px; font-family: ui-monospace, Menlo, monospace; font-size:12px; }
+  #stats b { color:var(--ink); font-weight:600; }
+  #legend { position:fixed; top:64px; right:16px; font-size:12px; color:var(--quiet); background:rgba(11,13,16,.8); border:1px solid var(--line); border-radius:8px; padding:8px 10px; }
+  #legend div { display:flex; align-items:center; gap:8px; margin:2px 0; }
+  #legend i { width:18px; height:3px; display:inline-block; border-radius:2px; }
+  #note { position:fixed; top:64px; left:16px; max-width:330px; font-size:11.5px; color:var(--quiet); }
+  #check { position:fixed; left:50%; top:22%; transform:translateX(-50%); font-family: ui-monospace, Menlo, monospace; font-size:13px; color:var(--teal); background:rgba(11,13,16,.9); border:1px solid var(--teal); border-radius:8px; padding:8px 12px; opacity:0; transition:opacity .4s; pointer-events:none; white-space:nowrap; }
+  @media (max-width: 640px) { #legend, #note { display:none; } #panel { left:8px; right:8px; bottom:8px; } }
+</style>
+<script type="importmap">{ "imports": { "three": "/explainers/medium-vs-method/vendor/three.module.min.js" } }</script>
+</head>
+<body>
+<div id="stage" aria-hidden="true"></div>
+<header>
+  <h1>The aircraft were fine. The medium failed.</h1>
+  <p>Nov 13, 2026 nationwide ground stop · drag to orbit · step through the timeline below · time compressed</p>
+</header>
+<div id="note">Schematic, not a map of real circuits. Center positions are approximate. Telecom links are illustrative: the sources cited don't say which circuits failed or where.</div>
+<div id="legend">
+  <div style="color:#e8eaed">three layers, bottom to top:</div>
+  <div><i style="background:#f2a93b"></i>telecom medium (leased)</div>
+  <div><i style="background:#e8eaed;height:8px;width:8px;border-radius:50%"></i>control centers</div>
+  <div><i style="background:#e5484d"></i>medium down</div>
+  <div><i style="background:#e8eaed"></i>aircraft</div>
+  <div><i style="background:#2dd4bf"></i>method: sealed packet</div>
+</div>
+<div id="check" role="status" aria-live="polite">sha256(body) == seal line ✓ · logged on receipt</div>
+<section id="panel" aria-live="polite">
+  <div id="steps" role="group" aria-label="Timeline steps"></div>
+  <div id="when"></div>
+  <div id="title"></div>
+  <p id="body"></p>
+  <div id="stats"></div>
+  <div id="src"></div>
+  <div style="margin-top:8px"><button id="play" type="button">Play</button></div>
+</section>
+<noscript><p style="padding:80px 16px">This explainer needs JavaScript. The full article is at <a href="https://hueandlogic.com/articles/survives-a-change-of-hands" style="color:#f2a93b">hueandlogic.com/articles/survives-a-change-of-hands</a>.</p></noscript>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from '/explainers/medium-vs-method/vendor/OrbitControls.js';
+
+// ---------- sourced timeline (every number here is cited in STEPS[].src) ----------
+const SRC = {
+  aj:  ['Al Jazeera', 'https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next'],
+  wp:  ['Washington Post', 'https://www.washingtonpost.com/business/2026/11/14/us-flights-grounded-back-to-normal/3b2114da-e022-11f1-912c-4fbb80d73f7f_story.html'],
+  cbs: ['CBS News', 'https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/'],
+  cnn: ['CNN', 'https://www.cnn.com/2026/11/14/politics/faa-ground-stop-what-we-know'],
+  aa:  ['American Airlines', 'https://news.aa.com/news/news-details/2026/Update-on-FAAs-nationwide-ground-stop/'],
+  art: ['Article', 'https://hueandlogic.com/articles/survives-a-change-of-hands'],
+};
+const STEPS = [
+  { key:'normal', label:'Before', when:'Fri Nov 13 · before 3:54 p.m. ET',
+    title:'Normal flow',
+    body:'About 50,000 flights were scheduled for the day. Control centers talk to each other and to aircraft over leased telecommunications lines: the medium.',
+    stats:[['scheduled Fri','50,000']], src:['cbs'], medium:'up', departures:1 },
+  { key:'outage', label:'3:54 p.m.', when:'Fri Nov 13 · 3:54 p.m. ET',
+    title:'The medium fails',
+    body:'A telecommunications outage hits the air route traffic control centers. The FAA issues a ground stop for every departure in the country. One possible cause, named by the Transportation Secretary: upgrade work on an old copper wire switch. It is not confirmed.',
+    stats:[['completed before stop','30,000']], src:['aj','cbs','cnn'], medium:'down', departures:0, switchPulse:true },
+  { key:'stop', label:'Ground stop', when:'Fri Nov 13 · 3:54 to ~8:15 p.m. ET',
+    title:'Departures held, flights aloft land',
+    body:'Aircraft already in the air continue to their destinations. Nothing new departs. The aircraft and the controllers are fine. It is the longest flight stoppage in 25 years, and it runs more than four hours.',
+    stats:[['duration','4+ h']], src:['wp','aa'], medium:'down', departures:0 },
+  { key:'lift', label:'~8:15 p.m.', when:'Fri Nov 13 · ~8:15 p.m. ET',
+    title:'Ground stop lifted',
+    body:'The medium comes back and departures resume. Planes and crews are now out of position, so recovery is slow.',
+    stats:[['not completed Fri','~12,000']], src:['wp','cbs'], medium:'up', departures:0.45 },
+  { key:'after', label:'Sun', when:'Sun Nov 15',
+    title:'Two days later',
+    body:'More than 1,400 flights are canceled for Sunday as airlines reposition aircraft and crews. A few hours with no medium becomes days of disruption.',
+    stats:[['canceled Sun','1,400+']], src:['cbs'], medium:'up', departures:0.8 },
+  { key:'method', label:'The method', when:'Any medium, any day',
+    title:"You don't own the medium. You own the method.",
+    body:'Take the medium away and send a sealed packet over whatever path is left: here, a radio arc. The verifier hashes the body and compares it to the seal line. The check is the same on every medium. Integrity isn’t delivery, so you still need more than one path that doesn’t share a failure point.',
+    stats:[['medium','any'],['check','sha256 = seal']], src:['art'], medium:'down', departures:0, method:true },
+];
+
+// ---------- scene ----------
+const host = document.getElementById('stage');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const renderer = new THREE.WebGLRenderer({ antialias:true, preserveDrawingBuffer:true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+host.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0b0d10);
+scene.fog = new THREE.Fog(0x0b0d10, 60, 120);
+const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 300);
+camera.position.set(0, 34, 44);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 4, 0);
+controls.enableDamping = true;
+controls.maxPolarAngle = Math.PI * 0.47;
+controls.minDistance = 20; controls.maxDistance = 170;
+controls.autoRotate = !reduce; controls.autoRotateSpeed = 0.25;
+scene.add(new THREE.AmbientLight(0xffffff, 0.7));
+const sun = new THREE.DirectionalLight(0xffffff, 0.8); sun.position.set(10, 30, 20); scene.add(sun);
+
+const Y_MED = 0, Y_CTR = 6, Y_AIR = 13;
+const grid = new THREE.GridHelper(64, 32, 0x1d2228, 0x161a1f); grid.position.y = Y_MED - 0.02; scene.add(grid);
+
+// 20 contiguous-US air route traffic control centers, approximate locations.
+const CENTERS = {
+  ZSE:[47.3,-122.2], ZOA:[37.5,-122.0], ZLA:[34.6,-118.1], ZLC:[40.8,-111.95], ZDV:[40.2,-105.1],
+  ZAB:[35.2,-106.6], ZMP:[44.6,-93.1], ZKC:[38.9,-94.8], ZFW:[32.8,-97.3], ZHU:[29.96,-95.3],
+  ZAU:[41.8,-88.3], ZID:[39.7,-86.3], ZME:[35.1,-89.95], ZTL:[33.4,-84.3], ZJX:[30.7,-81.9],
+  ZMA:[25.8,-80.3], ZDC:[39.1,-77.55], ZNY:[40.8,-73.1], ZBW:[42.75,-71.5], ZOB:[41.3,-82.2],
+};
+const P = {}; for (const [k,[lat,lon]] of Object.entries(CENTERS)) P[k] = new THREE.Vector2((lon + 96.5) * 0.9, -(lat - 37) * 1.15);
+const LINKS = 'ZSE-ZOA ZSE-ZLC ZOA-ZLA ZOA-ZLC ZLA-ZAB ZLA-ZLC ZLC-ZDV ZDV-ZAB ZDV-ZMP ZDV-ZKC ZAB-ZFW ZFW-ZHU ZFW-ZKC ZFW-ZME ZHU-ZME ZHU-ZJX ZKC-ZMP ZKC-ZAU ZKC-ZME ZMP-ZAU ZAU-ZID ZAU-ZOB ZID-ZME ZID-ZTL ZID-ZOB ZID-ZDC ZME-ZTL ZTL-ZJX ZTL-ZDC ZJX-ZMA ZJX-ZDC ZOB-ZNY ZOB-ZDC ZDC-ZNY ZNY-ZBW ZOB-ZBW'.split(' ').map(s => s.split('-'));
+
+function label(text, color = '#9aa0a6', size = 28) {
+  const c = document.createElement('canvas'), g = c.getContext('2d'), font = `600 ${size * 2}px ui-monospace, Menlo, monospace`;
+  g.font = font; c.width = Math.ceil(g.measureText(text).width) + 24; c.height = size * 3;
+  g.font = font; g.fillStyle = color; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(text, c.width / 2, c.height / 2);
+  const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c), transparent:true, depthWrite:false }));
+  s.userData.aspect = c.width / c.height; s.scale.set(s.userData.aspect, 1, 1); return s;
+}
+
+// layer captions
+
+// centers + drop lines to the medium
+const ctrMat = new THREE.MeshStandardMaterial({ color:0xe8eaed, roughness:.6 });
+const dropMat = new THREE.LineBasicMaterial({ color:0x2a2f36 });
+for (const [k,v] of Object.entries(P)) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.45, 0.5, 20), ctrMat); m.position.set(v.x, Y_CTR, v.y); scene.add(m);
+  const l = label(k); l.position.set(v.x, Y_CTR + 1.2, v.y); l.scale.set(l.userData.aspect * 0.7, 0.7, 1); scene.add(l);
+  scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(v.x, Y_CTR, v.y), new THREE.Vector3(v.x, Y_MED, v.y)]), dropMat));
+}
+
+// medium links + data pulses
+const linkMat = new THREE.LineBasicMaterial({ color:0xf2a93b, transparent:true, opacity:.85 });
+const linkGeo = []; for (const [a,b] of LINKS) linkGeo.push(new THREE.Vector3(P[a].x, Y_MED, P[a].y), new THREE.Vector3(P[b].x, Y_MED, P[b].y));
+const links = new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(linkGeo), linkMat); scene.add(links);
+const pulseGeo = new THREE.SphereGeometry(0.16, 8, 8);
+const pulses = new THREE.InstancedMesh(pulseGeo, new THREE.MeshBasicMaterial({ color:0xffd28a }), LINKS.length * 2); scene.add(pulses);
+const pulsePhase = Array.from({length: LINKS.length * 2}, (_, i) => (i * 0.6180339) % 1);
+
+// possible-cause marker (placement is schematic, not a location claim)
+const sw = new THREE.Mesh(new THREE.BoxGeometry(1.4, 0.7, 1.4), new THREE.MeshStandardMaterial({ color:0x3a2a12, emissive:0x000000 }));
+sw.position.set(10, Y_MED + 0.35, -14); scene.add(sw);
+const swLbl = label('copper switch? (possible, unconfirmed)', '#e5484d', 15); swLbl.position.set(10, Y_MED + 2.2, -14); swLbl.scale.set(swLbl.userData.aspect * 1.1, 1.1, 1); swLbl.visible = false; scene.add(swLbl);
+
+// aircraft sim
+const N = 170, rnd = mulberry(1113);
+const keys = Object.keys(P);
+const planes = new THREE.InstancedMesh(new THREE.ConeGeometry(0.18, 0.6, 6), new THREE.MeshBasicMaterial({ color:0xe8eaed }), N); scene.add(planes);
+const held = new THREE.InstancedMesh(new THREE.SphereGeometry(0.12, 6, 6), new THREE.MeshBasicMaterial({ color:0x9aa0a6 }), 400); scene.add(held);
+const F = Array.from({length:N}, () => ({ a:null, b:null, t:0, dur:1, live:false }));
+function spawn(f) { f.a = keys[(rnd()*keys.length)|0]; do { f.b = keys[(rnd()*keys.length)|0]; } while (f.b === f.a); f.t = 0; f.dur = 6 + P[f.a].distanceTo(P[f.b]) * 0.35; f.live = true; }
+F.forEach(f => { spawn(f); f.t = rnd() * f.dur; });
+let heldCount = 0;
+
+// method layer: a sealed packet on a radio arc that bypasses the medium
+const pkt = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.7, 0.7), new THREE.MeshBasicMaterial({ color:0x2dd4bf })); pkt.visible = false; scene.add(pkt);
+const arc = new THREE.QuadraticBezierCurve3(new THREE.Vector3(P.ZDC.x, Y_CTR, P.ZDC.y), new THREE.Vector3(0, 19, 2), new THREE.Vector3(P.ZLA.x, Y_CTR, P.ZLA.y));
+const arcLine = new THREE.Line(new THREE.BufferGeometry().setFromPoints(arc.getPoints(80)), new THREE.LineDashedMaterial({ color:0x2dd4bf, dashSize:.6, gapSize:.4 }));
+arcLine.computeLineDistances(); arcLine.visible = false; scene.add(arcLine);
+const arcLbl = label('radio · 1200-baud · same bytes', '#2dd4bf', 16); arcLbl.position.copy(arc.getPoint(0.5)).add(new THREE.Vector3(0, 1.6, 0)); arcLbl.scale.set(arcLbl.userData.aspect * 1.1, 1.1, 1); arcLbl.visible = false; scene.add(arcLbl);
+
+// ---------- UI ----------
+const $ = id => document.getElementById(id);
+let cur = 0, playing = false, stepClock = 0, mediumLevel = 1, pktT = 0;
+STEPS.forEach((s, i) => { const b = document.createElement('button'); b.type = 'button'; b.textContent = s.label; b.onclick = () => { playing = false; $('play').textContent = 'Play'; go(i); }; $('steps').appendChild(b); });
+function go(i) {
+  cur = i; stepClock = 0; pktT = 0; const s = STEPS[i];
+  [...$('steps').children].forEach((b, j) => j === i ? b.setAttribute('aria-current', 'step') : b.removeAttribute('aria-current'));
+  $('when').textContent = s.when; $('title').textContent = s.title; $('body').textContent = s.body;
+  $('stats').innerHTML = s.stats.map(([k,v]) => `<span>${k}: <b>${v}</b></span>`).join('');
+  $('src').innerHTML = 'Source: ' + s.src.map(k => `<a href="${SRC[k][1]}" target="_blank" rel="noopener">${SRC[k][0]}</a>`).join(' · ');
+  swLbl.visible = !!s.switchPulse || s.key === 'stop';
+  [pkt, arcLine, arcLbl].forEach(o => o.visible = !!s.method);
+  $('check').style.opacity = 0;
+}
+$('play').onclick = () => { playing = !playing; $('play').textContent = playing ? 'Pause' : 'Play'; if (playing && cur === STEPS.length - 1) go(0); };
+addEventListener('keydown', e => { if (e.key === 'ArrowRight') go(Math.min(cur + 1, STEPS.length - 1)); if (e.key === 'ArrowLeft') go(Math.max(cur - 1, 0)); });
+go(0);
+
+function resize() {
+  const w = innerWidth, h = innerHeight; renderer.setSize(w, h); camera.aspect = w / h;
+  const fit = Math.max(1, 1.45 / camera.aspect);          // keep the 46-unit-wide scene in frame on narrow screens
+  camera.position.set(0, 34 * fit, 44 * fit); scene.fog.near = 60 * fit; scene.fog.far = 120 * fit;
+  const panel = document.getElementById('panel').offsetHeight;
+  camera.setViewOffset(w, h, 0, Math.round(panel * 0.42), w, h);   // lift the scene above the panel
+  camera.updateProjectionMatrix();
+}
+addEventListener('resize', resize); resize();
+
+// ---------- loop ----------
+const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), v3 = new THREE.Vector3(), up = new THREE.Vector3(0,1,0), dir = new THREE.Vector3(), sc = new THREE.Vector3(1,1,1), hide = new THREE.Vector3(0,0,0);
+let last = performance.now();
+function frame(now) {
+  const dt = Math.min((now - last) / 1000, 0.05) * (reduce ? 0.4 : 1); last = now;
+  const s = STEPS[cur]; stepClock += dt;
+  if (playing && stepClock > 7) go((cur + 1) % STEPS.length);
+
+  // medium
+  const target = s.medium === 'up' ? 1 : 0;
+  if (s.switchPulse && stepClock < 1.6) mediumLevel = (Math.sin(stepClock * 40) > 0 ? 1 : 0.15); else mediumLevel += (target - mediumLevel) * Math.min(1, dt * 3);
+  linkMat.color.setRGB(THREE.MathUtils.lerp(0.9, 0.95, mediumLevel), THREE.MathUtils.lerp(0.28, 0.66, mediumLevel), THREE.MathUtils.lerp(0.3, 0.23, mediumLevel));
+  linkMat.opacity = 0.35 + 0.5 * mediumLevel;
+  sw.material.emissive.setRGB(swLbl.visible ? 0.5 + 0.4 * Math.sin(now / 180) : 0, 0, 0);
+  for (let i = 0; i < LINKS.length * 2; i++) {
+    const [a, b] = LINKS[i >> 1]; const fwd = i % 2 === 0;
+    pulsePhase[i] = (pulsePhase[i] + dt * 0.35) % 1; const t = fwd ? pulsePhase[i] : 1 - pulsePhase[i];
+    if (mediumLevel > 0.5) { v3.set(THREE.MathUtils.lerp(P[a].x, P[b].x, t), Y_MED + 0.05, THREE.MathUtils.lerp(P[a].y, P[b].y, t)); m4.compose(v3, q.identity(), sc); } else m4.compose(v3.set(0,-50,0), q.identity(), hide);
+    pulses.setMatrixAt(i, m4);
+  }
+  pulses.instanceMatrix.needsUpdate = true;
+
+  // aircraft: aloft flights always finish; new departures only when allowed
+  for (let i = 0; i < N; i++) {
+    const f = F[i];
+    if (f.live) {
+      f.t += dt * (s.departures === 0 ? 3 : 1);
+      if (f.t >= f.dur) { f.live = false; if (s.departures === 0) heldCount = Math.min(heldCount + 1, 400); }
+    }
+    if (!f.live && rnd() < s.departures * dt * 0.6) { spawn(f); if (heldCount > 0) heldCount--; }
+    if (f.live) {
+      const u = f.t / f.dur, A = P[f.a], B = P[f.b];
+      const x = THREE.MathUtils.lerp(A.x, B.x, u), z = THREE.MathUtils.lerp(A.y, B.y, u), y = Y_CTR + (Y_AIR - Y_CTR) * Math.sin(Math.PI * u);
+      dir.set(B.x - A.x, 0, B.y - A.y).normalize(); q.setFromUnitVectors(up, dir);
+      m4.compose(v3.set(x, y, z), q, sc);
+    } else m4.compose(v3.set(0, -50, 0), q.identity(), hide);
+    planes.setMatrixAt(i, m4);
+  }
+  planes.instanceMatrix.needsUpdate = true;
+  for (let i = 0; i < 400; i++) {
+    if (i < heldCount) { const k = keys[i % keys.length], ring = Math.floor(i / keys.length); v3.set(P[k].x + Math.cos(i) * (0.7 + ring * 0.18), Y_CTR - 0.4, P[k].y + Math.sin(i) * (0.7 + ring * 0.18)); m4.compose(v3, q.identity(), sc); }
+    else m4.compose(v3.set(0,-50,0), q.identity(), hide);
+    held.setMatrixAt(i, m4);
+  }
+  held.instanceMatrix.needsUpdate = true;
+
+  // method packet
+  if (s.method) {
+    pktT = Math.min(1, pktT + dt / 4);
+    pkt.position.copy(arc.getPoint(pktT)); pkt.rotation.y += dt * 2;
+    if (pktT >= 1) $('check').style.opacity = 1;
+  }
+
+  controls.update(); renderer.render(scene, camera);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+function mulberry(a) { return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+window.__explainer = { go, steps: STEPS.length };
+</script>
+</body>
+</html>
