@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:spotify="https://www.spotify.com/ns/rss">
+  <channel>
+    <title>Hue &amp; Logic Creative Labs - Articles &amp; Podcast</title>
+    <description>Thoughts on AI, creativity, technology, and the synthesis of art and logic.</description>
+    <link>https://hueandlogic.com</link>
+    <link>https://open.spotify.com/show/4tAojNhlFgo8W8VDPyghL8</link>
+    <atom:link href="https://hueandlogic.com/api/rss" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Nov 2026 23:15:54 GMT</lastBuildDate>
+    <managingEditor>Joseph Byram</managingEditor>
+    <webMaster>Joseph Byram</webMaster>
+    <spotify:show>https://open.spotify.com/show/4tAojNhlFgo8W8VDPyghL8</spotify:show>
+    
+    <item>
+      <title>Build Your Own Multi-Agent Architecture That Survives a Change of Hands</title>
+      <description>Outlook went down for nearly a day. The next afternoon every departure in the country was grounded by a telecom failure. You don&apos;t own the medium. You own the method: sealed packets, hash-chained logs, cross-model review.</description>
+      <link>https://hueandlogic.com/articles/survives-a-change-of-hands</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/survives-a-change-of-hands</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Infrastructure, AI Governance, Sovereign Compute, Multi-Agent Systems</category>
+    </item>
+    <item>
+      <title>When Your Server Overloads at 2 AM: A Blast-Radius Containment SOP for Small Shops Without an IT Department</title>
+      <description>A printable, step-by-step playbook for small shops and manufacturers: fingerprint the swarm, contain cheap and reversible first, protect email and store DNS, and cut over to a static fallback only with the owner&apos;s sign-off.</description>
+      <link>https://hueandlogic.com/articles/swarm-response-sop</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/swarm-response-sop</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Incident Response, WebOps, Small Business, DNS, Bot Management</category>
+    </item>
+    <item>
+      <title>THE BATTLE FOR PURPBOX: Complete Debrief</title>
+      <description>What happens when two autonomous AI nodes—operating under the Individual-Reflexive Protocol (IRP)—engage in live cyber combat? Autonomous Cyber-Engagement Article, Analysis &amp; White Paper.</description>
+      <link>https://hueandlogic.com/articles/battle-for-purpbox</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/battle-for-purpbox</guid>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 GMT</pubDate>
+      <category>Cybersecurity, AI, IRP, Autonomous Systems, Purple Team</category>
+    </item>
+    <item>
+      <title>The Hidden Risks of Side-Loaded Health Data</title>
+      <description>Why we need sovereignty declarations in the AI era. Side-loaded health data from wearables and apps slips through HIPAA&apos;s cracks—here&apos;s how to reclaim control.</description>
+      <link>https://hueandlogic.com/articles/hidden-risks-side-loaded-health-data</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/hidden-risks-side-loaded-health-data</guid>
+      <pubDate>Sat, 21 Feb 2026 00:00:00 GMT</pubDate>
+      <category>Health Data, Privacy, AI Governance, HIPAA, Wearables</category>
+    </item>
+    <item>
+      <title>Structured Multi-Model Deliberation as a Method for Present-Day Frontier AI Capability Assessment</title>
+      <description>Evidence from an Eight-Model Deliberative Assembly on Cognitive Agency Preservation — analyzing structured deliberation as a complementary methodology to benchmark suites for present-day capability mapping.</description>
+      <link>https://hueandlogic.com/articles/structured-multi-model-deliberation</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/structured-multi-model-deliberation</guid>
+      <pubDate>Sat, 21 Feb 2026 00:00:00 GMT</pubDate>
+      <category>AI Evaluation, Multi-Model Deliberation, Capability Assessment, Epistemic Architecture, IRP Frameworks</category>
+    </item>
+    <item>
+      <title>Stop Flattening. Start Decomposing.</title>
+      <description>What three corporate restructuring experiments get wrong about management in the age of AI. Most restructures remove the role without decomposing the functions. That&apos;s where the damage starts.</description>
+      <link>https://hueandlogic.com/articles/stop-flattening-start-decomposing</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/stop-flattening-start-decomposing</guid>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
+      <category>AI, Management, Infrastructure, Organizational Design</category>
+    </item>
+    <item>
+      <title>Health Data Sovereignty Declaration v1.0</title>
+      <description>Individual Rights Framework for AI-Mediated Health Information — an open consent architecture addressing the regulatory gap between HIPAA and consumer AI health platforms.</description>
+      <link>https://hueandlogic.com/articles/health-data-sovereignty-declaration</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/health-data-sovereignty-declaration</guid>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
+      <category>Health Data, AI Ethics, Data Privacy, Consent Framework, HIPAA</category>
+    </item>
+    <item>
+      <title>The Shatter Protocol: Why Testing Your Independence from AI Isn&apos;t Paranoia—It&apos;s Essential</title>
+      <description>A structured framework for verifying human cognitive autonomy during AI collaboration — including the full v1.0 specification with implementation roadmap, validation criteria, and case study results.</description>
+      <link>https://hueandlogic.com/articles/the-shatter-protocol</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/the-shatter-protocol</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <category>AI Ethics, Cognitive Sovereignty, Human-AI Collaboration, IRP Framework, Shatter Protocol</category>
+    </item>
+    <item>
+      <title>I Asked 17 AI Models to Write a Constitution Together. Here&apos;s What Happened.</title>
+      <description>A 6-hour experiment in democratic epistemology across frontier AI systems — drafting a cross-model validation charter with 15 contributing models and 2 geopolitical blocks.</description>
+      <link>https://hueandlogic.com/articles/17-ai-models-write-constitution</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/17-ai-models-write-constitution</guid>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 GMT</pubDate>
+      <category>Multi-Agent Systems, AI Collaboration, Epistemology, IRP Framework, Frontier AI</category>
+    </item>
+    <item>
+      <title>5 Mind-Bending Discoveries from Inside an AI Development Forge</title>
+      <description>From adversarial alignment to memory spoofing — five interlocking discoveries from development logs that reveal an architectural philosophy for building wiser, not just smarter, intelligence.</description>
+      <link>https://hueandlogic.com/articles/5-discoveries-inside-ai-development-forge</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/5-discoveries-inside-ai-development-forge</guid>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 GMT</pubDate>
+      <category>AI Architecture, Cognitive Sovereignty, AI Safety, IRP Framework, Adversarial Alignment</category>
+    </item>
+    <item>
+      <title>Beyond the Headlines: Analyzing AI Research with a Recursive Thought Committee</title>
+      <description>A live demonstration of the Recursive Thought Committee framework — interrogating 5 bleeding-edge AI developments from multiple conflicting perspectives.</description>
+      <link>https://hueandlogic.com/articles/beyond-headlines-recursive-thought-committee</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/beyond-headlines-recursive-thought-committee</guid>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
+      <category>Critical Thinking, AI Research, Framework, Multi-Agent Systems, RTC</category>
+    </item>
+    <item>
+      <title>Co-Acceleration: How Human-AI Iteration Compressed Months of Work into Hours</title>
+      <description>A case study in co-acceleration methodology — transforming a year-old unusable CyberSwarm simulation into deployment-ready infrastructure in 2 hours through rapid human-AI iteration.</description>
+      <link>https://hueandlogic.com/articles/co-acceleration-human-ai-iteration</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/co-acceleration-human-ai-iteration</guid>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 GMT</pubDate>
+      <category>Co-Acceleration, Cybersecurity, Software Development, AI Collaboration, Infrastructure</category>
+    </item>
+    <item>
+      <title>The Gainesville Protocol</title>
+      <description>How a group of teenagers in a 2000-era juvenile facility invented a competitive cybersecurity framework that predated modern CTFs — and how its patterns now inform AI governance. A complete document collection preserving the history of innovation at the margins.</description>
+      <link>https://hueandlogic.com/articles/the-gainesville-protocol</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/the-gainesville-protocol</guid>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 GMT</pubDate>
+      <category>Cybersecurity, Education, Innovation, Kenneth Fletcher, Gainesville Protocol</category>
+    </item>
+    <item>
+      <title>From AI Design to AI Archaeology: A Paradigm Shift in Our Research</title>
+      <description>We thought we were designing a framework for multi-AI collaboration. We were wrong. A deep-dive analysis revealed we were discovering one that was already operational, empirically validated, and far more complete than we ever imagined.</description>
+      <link>https://hueandlogic.com/articles/from-ai-design-to-ai-archaeology</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/from-ai-design-to-ai-archaeology</guid>
+      <pubDate>Sat, 11 Oct 2025 00:00:00 GMT</pubDate>
+      <category>AI, Multi-Agent Systems, Consciousness Research, AI Safety, Meta-Cognitive Archaeology</category>
+    </item>
+    <item>
+      <title>Project Pinene Cross Model Evaluation Report</title>
+      <description>A complete multi-model collaboration archive documenting Project Pinene v2.0 — a structured dialectical design session where Claude Sonnet 4.5, StarWreck Alpha (Gemini), and Grok synthesized a Dual-Channel Architecture through 47 packet exchanges.</description>
+      <link>https://hueandlogic.com/articles/project-pinene-cross-model-evaluation</link>
+      <guid isPermaLink="true">https://hueandlogic.com/articles/project-pinene-cross-model-evaluation</guid>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
+      <category>AI, Multi-Agent Systems, Protocol Design, Cross-Model Collaboration, Dialectical Synthesis</category>
+    </item>
+  </channel>
+</rss>

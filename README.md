@@ -63,6 +63,32 @@ has the form. ARC chat also needs a server and will not answer here. That includ
 - Why this copy carries it: Vercel paused deployments for the account on Nov 8, 2026
   (Hobby fair-use limit, Fluid Provisioned Memory) until Dec 8, 2026.
 
+## 2026-11-15: three newer pages rebuilt from one build; Articles listing and RSS work
+
+- **One build for the newer pages.** `/articles/swarm-response-sop/`,
+  `/articles/survives-a-change-of-hands/` and `/logic/library/` now come from a single build:
+  site repo `d2daa5f` plus `content/articles/swarm-response-sop.md` (site repo PR #55), with
+  the mirror steps below. The tree holds two builds: 44 pages and these 3.
+- **The 2026-11-13 crash, corrected cause.** It was not the mixed builds. The original
+  2026-11-11 page runs clean beside the other build. On 2026-11-12 the teaser video was
+  pasted into the built page by hand. The same text also sits in the page's inline data, in a
+  length-prefixed block, and the paste changed the text without the length. The data stream
+  never finished, React threw "Connection closed" and Next showed its error screen. Dropping
+  the page's scripts hid that, and left the mobile menu dead on that article.
+- **Fix.** The teaser is part of the article source now, with absolute asset paths. The page
+  hydrates normally again: scripts are back and the mobile menu works. Its visible text is
+  identical to the page it replaces. The two teaser files did not change.
+- **Rule.** Never edit text inside a built page by hand. Change the source and rebuild the page.
+- **LOGIC Library** lists 26 pieces; the new article is No. 01.
+  `logic/library/text/survives-a-change-of-hands` is new and the swarm payload carries the teaser.
+- **`/api/articles` and `/api/rss`** are static files now, written by
+  `scripts/mirror-static-api.ts` in the site repo with the same code as the site routes
+  (15 articles). The Articles listing page shows them. The files have no extension, so Pages
+  serves them as `application/octet-stream`: the listing and feed readers parse them, and a
+  browser offers the feed as a download. Regenerate both whenever an article is added.
+- Only two `_next` files were added (the new build's manifests). No existing `_next` file
+  was changed or removed. The guard was re-run; `--check` exits 0.
+
 ## 2026-11-15: cross-build navigation guard
 
 - **What was wrong.** This mirror holds pages from three builds. A link from a page of one
