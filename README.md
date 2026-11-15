@@ -63,6 +63,26 @@ has the form. ARC chat also needs a server and will not answer here. That includ
 - Why this copy carries it: Vercel paused deployments for the account on Nov 8, 2026
   (Hobby fair-use limit, Fluid Provisioned Memory) until Dec 8, 2026.
 
+## 2026-11-15: cross-build navigation guard
+
+- **What was wrong.** This mirror holds pages from three builds. A link from a page of one
+  build to a page of another did not do "a normal full page load", as the 2026-11-11 note
+  below says. The Next router fetched the other page's `index.txt`, could not parse it
+  against its own chunks, and its error path sent the browser to the raw `.../index.txt`.
+  Seen on LOGIC → "Enter the Library" and on every header link of the new article.
+- **Fix.** `_mirror/xbuild_guard.py` puts one constant inline script first in `<head>` of
+  every Next page (47 files, `404.html` included). It wraps `fetch` for same-origin
+  `*/index.txt` requests only, compares the payload's build id with the page's own, and for a
+  different build hands the router a non-payload response so Next does an ordinary full page
+  load of the clean URL. Links inside one build still navigate client-side. Other-build
+  payloads are no longer parsed at all, so their chunks are never loaded into the wrong runtime.
+- **Rule for partial updates.** After copying pages from a new build into this tree, run
+  `python3 _mirror/xbuild_guard.py .` and then `python3 _mirror/xbuild_guard.py --check .`
+  (exit 0 = every Next page carries the current guard). The script is identical on every page;
+  its sha256 is `5abb4a6ab6d788442defd1d2d0a9b2382da87b014a813d4b4ef546205042aa15`.
+- No page text, asset or `_next` file changed. One full single-build rebuild remains the
+  durable fix and would make the guard unnecessary.
+
 ## How this build was made
 
 From the site repo at the commit above:
