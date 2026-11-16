@@ -70,7 +70,8 @@ has the form. ARC chat also needs a server and will not answer here. That includ
   timeline and sources over a still picture of each step (`still/*.jpg`, canvas captures of the
   same scene). With WebGL nothing changes.
 - The seal-check line wraps on phones instead of running off both edges.
-- Source: site repo PR #55. `MANIFEST.sha256` in the folder lists all 12 files.
+- Source: site repo PR #55. `explainers/medium-vs-method/MANIFEST.sha256` lists the folder's 11 files;
+  from the mirror root, `sha256sum -c explainers/medium-vs-method/MANIFEST.sha256`.
 
 ## 2026-11-15: three newer pages rebuilt from one build; Articles listing and RSS work
 
