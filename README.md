@@ -63,6 +63,15 @@ has the form. ARC chat also needs a server and will not answer here. That includ
 - Why this copy carries it: Vercel paused deployments for the account on Nov 8, 2026
   (Hobby fair-use limit, Fluid Provisioned Memory) until Dec 8, 2026.
 
+## 2026-11-15: explainer works without 3D graphics
+
+- `/explainers/medium-vs-method/` needed WebGL. In a browser without it the page was a blank
+  box with a dead Play button. It now checks first and, with no WebGL, shows the same six-step
+  timeline and sources over a still picture of each step (`still/*.jpg`, canvas captures of the
+  same scene). With WebGL nothing changes.
+- The seal-check line wraps on phones instead of running off both edges.
+- Source: site repo PR #55. `MANIFEST.sha256` in the folder lists all 12 files.
+
 ## 2026-11-15: three newer pages rebuilt from one build; Articles listing and RSS work
 
 - **One build for the newer pages.** `/articles/swarm-response-sop/`,
