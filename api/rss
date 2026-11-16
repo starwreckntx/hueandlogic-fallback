@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:spotify="https://www.spotify.com/ns/rss">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:spotify="https://www.spotify.com/ns/rss" version="2.0">
   <channel>
     <title>Hue &amp; Logic Creative Labs - Articles &amp; Podcast</title>
     <description>Thoughts on AI, creativity, technology, and the synthesis of art and logic.</description>
@@ -14,7 +14,7 @@
     
     <item>
       <title>Build Your Own Multi-Agent Architecture That Survives a Change of Hands</title>
-      <description>Outlook went down for nearly a day. The next afternoon every departure in the country was grounded by a telecom failure. You don&apos;t own the medium. You own the method: sealed packets, hash-chained logs, cross-model review.</description>
+      <description>Outlook went down for nearly a day. The next afternoon every departure in the country was grounded by a telecom failure. You don't own the medium. You own the method: sealed packets, hash-chained logs, cross-model review.</description>
       <link>https://hueandlogic.com/articles/survives-a-change-of-hands</link>
       <guid isPermaLink="true">https://hueandlogic.com/articles/survives-a-change-of-hands</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -22,7 +22,7 @@
     </item>
     <item>
       <title>When Your Server Overloads at 2 AM: A Blast-Radius Containment SOP for Small Shops Without an IT Department</title>
-      <description>A printable, step-by-step playbook for small shops and manufacturers: fingerprint the swarm, contain cheap and reversible first, protect email and store DNS, and cut over to a static fallback only with the owner&apos;s sign-off.</description>
+      <description>A printable, step-by-step playbook for small shops and manufacturers: fingerprint the swarm, contain cheap and reversible first, protect email and store DNS, and cut over to a static fallback only with the owner's sign-off.</description>
       <link>https://hueandlogic.com/articles/swarm-response-sop</link>
       <guid isPermaLink="true">https://hueandlogic.com/articles/swarm-response-sop</guid>
       <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
@@ -38,23 +38,15 @@
     </item>
     <item>
       <title>The Hidden Risks of Side-Loaded Health Data</title>
-      <description>Why we need sovereignty declarations in the AI era. Side-loaded health data from wearables and apps slips through HIPAA&apos;s cracks—here&apos;s how to reclaim control.</description>
+      <description>Why we need sovereignty declarations in the AI era. Side-loaded health data from wearables and apps slips through HIPAA's cracks—here's how to reclaim control.</description>
       <link>https://hueandlogic.com/articles/hidden-risks-side-loaded-health-data</link>
       <guid isPermaLink="true">https://hueandlogic.com/articles/hidden-risks-side-loaded-health-data</guid>
       <pubDate>Sat, 21 Feb 2026 00:00:00 GMT</pubDate>
       <category>Health Data, Privacy, AI Governance, HIPAA, Wearables</category>
     </item>
     <item>
-      <title>Structured Multi-Model Deliberation as a Method for Present-Day Frontier AI Capability Assessment</title>
-      <description>Evidence from an Eight-Model Deliberative Assembly on Cognitive Agency Preservation — analyzing structured deliberation as a complementary methodology to benchmark suites for present-day capability mapping.</description>
-      <link>https://hueandlogic.com/articles/structured-multi-model-deliberation</link>
-      <guid isPermaLink="true">https://hueandlogic.com/articles/structured-multi-model-deliberation</guid>
-      <pubDate>Sat, 21 Feb 2026 00:00:00 GMT</pubDate>
-      <category>AI Evaluation, Multi-Model Deliberation, Capability Assessment, Epistemic Architecture, IRP Frameworks</category>
-    </item>
-    <item>
       <title>Stop Flattening. Start Decomposing.</title>
-      <description>What three corporate restructuring experiments get wrong about management in the age of AI. Most restructures remove the role without decomposing the functions. That&apos;s where the damage starts.</description>
+      <description>What three corporate restructuring experiments get wrong about management in the age of AI. Most restructures remove the role without decomposing the functions. That's where the damage starts.</description>
       <link>https://hueandlogic.com/articles/stop-flattening-start-decomposing</link>
       <guid isPermaLink="true">https://hueandlogic.com/articles/stop-flattening-start-decomposing</guid>
       <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
@@ -69,7 +61,7 @@
       <category>Health Data, AI Ethics, Data Privacy, Consent Framework, HIPAA</category>
     </item>
     <item>
-      <title>The Shatter Protocol: Why Testing Your Independence from AI Isn&apos;t Paranoia—It&apos;s Essential</title>
+      <title>The Shatter Protocol: Why Testing Your Independence from AI Isn't Paranoia—It's Essential</title>
       <description>A structured framework for verifying human cognitive autonomy during AI collaboration — including the full v1.0 specification with implementation roadmap, validation criteria, and case study results.</description>
       <link>https://hueandlogic.com/articles/the-shatter-protocol</link>
       <guid isPermaLink="true">https://hueandlogic.com/articles/the-shatter-protocol</guid>
@@ -77,7 +69,7 @@
       <category>AI Ethics, Cognitive Sovereignty, Human-AI Collaboration, IRP Framework, Shatter Protocol</category>
     </item>
     <item>
-      <title>I Asked 17 AI Models to Write a Constitution Together. Here&apos;s What Happened.</title>
+      <title>I Asked 17 AI Models to Write a Constitution Together. Here's What Happened.</title>
       <description>A 6-hour experiment in democratic epistemology across frontier AI systems — drafting a cross-model validation charter with 15 contributing models and 2 geopolitical blocks.</description>
       <link>https://hueandlogic.com/articles/17-ai-models-write-constitution</link>
       <guid isPermaLink="true">https://hueandlogic.com/articles/17-ai-models-write-constitution</guid>

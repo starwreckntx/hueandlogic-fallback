@@ -1,12 +1,12 @@
-# Hue & Logic — static fallback mirror
+# Hue & Logic · GitHub Pages
 
-Static fallback copy of the public pages of hueandlogic.com, built from the site's
-main branch (commit 60e7683) plus the price change described below. Build output only.
-No source, no server routes, no forms backend.
+This repository serves the public static site at www.hueandlogic.com. The custom domain is configured by CNAME. The website source and the FrontDesk service have their own repositories.
 
-This tree is the **root-path** build (assets at `/…`) for serving on the custom domain
-`www.hueandlogic.com` via GitHub Pages. Excluded from this mirror: `/screening`,
-`/api`, `/admin`, `/console`, and any Maxtena / pLEO / Hydra / Starshield content.
+## ARC release candidate
+
+The native ARC panel and studio entrance use the public, text-only FrontDesk gateway. The published site contains the browser client and public email contact. The generated static pages use a single Next.js build with the production homepage and assessment prices, both November articles, their media and the Medium vs. Method explainer. The homepage preserves the existing first-arrival behavior and the `/?home` override.
+
+The public article index, library, sitemap and two static feeds include 14 approved articles. The feed URLs are `/api/articles` and `/api/rss`; each is an ordinary static file. The site has no server API routes. Future releases must preserve the approved content from this mirror and validate the complete output. The historical notes below describe earlier builds.
 
 ## 2026-11-10 rebuild: prices filled in
 
